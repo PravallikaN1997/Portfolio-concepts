@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1900" height="3300" viewBox="0 0 1900 3300">
+  <defs>
+    <style>
+      .mono{font:800 17px ui-monospace,Menlo,monospace;letter-spacing:.15em}.tiny{font:800 12px ui-monospace,Menlo,monospace;letter-spacing:.12em}
+      .h{font:900 86px Inter,Arial,sans-serif;letter-spacing:-.065em}.h2{font:900 48px Inter,Arial,sans-serif;letter-spacing:-.04em}.p{font:500 23px Inter,Arial,sans-serif}
+      .serif{font:700 84px Georgia,serif;letter-spacing:-.035em}.hand{font:italic 500 31px Georgia,serif}
+      .ink{fill:#111722}.muted{fill:#6a7280}.cream{fill:#f8efe0}.film{fill:#08090a}.amber{fill:#d89a54}.paper{fill:#eee2cf}
+    </style>
+    <filter id="glow"><feGaussianBlur stdDeviation="18" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="softShadow"><feDropShadow dx="0" dy="22" stdDeviation="22" flood-color="#08090a" flood-opacity=".28"/></filter>
+    <pattern id="grain" width="18" height="18" patternUnits="userSpaceOnUse"><circle cx="3" cy="5" r=".9" fill="#111722" opacity=".08"/><circle cx="12" cy="14" r=".7" fill="#fff" opacity=".22"/><path d="M7 1l1 7" stroke="#111722" opacity=".04"/></pattern>
+    <pattern id="dust" width="90" height="90" patternUnits="userSpaceOnUse"><circle cx="12" cy="20" r="1.8" fill="#111722" opacity=".18"/><circle cx="70" cy="44" r="1.1" fill="#111722" opacity=".12"/><path d="M40 6c-8 22-6 42 6 68" fill="none" stroke="#111722" stroke-width="1" opacity=".08"/></pattern>
+    <linearGradient id="projectorBeam" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#fff3c8" stop-opacity=".95"/><stop offset=".45" stop-color="#ffe2a6" stop-opacity=".35"/><stop offset="1" stop-color="#fff3c8" stop-opacity="0"/></linearGradient>
+    <linearGradient id="darkroom" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#100b0b"/><stop offset=".45" stop-color="#231511"/><stop offset="1" stop-color="#4b1c23"/></linearGradient>
+    <linearGradient id="wall" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f4e5cb"/><stop offset=".6" stop-color="#e9d6b8"/><stop offset="1" stop-color="#c8ad8a"/></linearGradient>
+  </defs>
+  <rect width="1900" height="3300" fill="#eee7dc"/>
+  <rect width="1900" height="3300" fill="url(#grain)"/>
+  <text x="80" y="92" class="mono ink">PLAYGROUND / FILM NEGATIVE + PROJECTION DIRECTIONS</text>
+  <text x="80" y="138" class="p muted">No TV. Film is the navigation. Projection is the detail view. Mood: discovered footage, not product gallery.</text>
+
+  <!-- Concept 01 -->
+  <g transform="translate(80 220)">
+    <rect width="1740" height="900" rx="36" fill="url(#darkroom)"/>
+    <rect width="1740" height="900" rx="36" fill="url(#grain)" opacity=".7"/>
+    <text x="54" y="76" fill="#f8efe0" class="mono">01 / DARKROOM CONTACT SHEET</text>
+    <text x="72" y="178" fill="#f8efe0" class="serif">Playground</text>
+    <text x="78" y="232" fill="#decbb8" class="p">Experiments, games, prototypes, and strange things built along the way.</text>
+
+    <g transform="translate(88 300)" filter="url(#softShadow)">
+      <rect width="930" height="460" rx="18" class="film"/>
+      <g transform="translate(34 34)">
+        <rect width="250" height="160" fill="#d9c0a0"/><rect x="304" width="250" height="160" fill="#8fa3a8"/><rect x="608" width="250" height="160" fill="#d6a177"/>
+        <rect y="232" width="250" height="160" fill="#b8a29a"/><rect x="304" y="232" width="250" height="160" fill="#d9d0bf"/><rect x="608" y="232" width="250" height="160" fill="#6f7f7b"/>
+        <text x="8" y="184" fill="#f5e7d1" class="tiny">01 NICHE GAMES</text><text x="312" y="184" fill="#f5e7d1" class="tiny">02 MOTION TESTS</text><text x="616" y="184" fill="#f5e7d1" class="tiny">03 TINY UI</text>
+        <text x="8" y="416" fill="#f5e7d1" class="tiny">04 ARCHIVE FINDS</text><text x="312" y="416" fill="#f5e7d1" class="tiny">05 UI LAB</text><text x="616" y="416" fill="#f5e7d1" class="tiny">06 EXTRA FRAME</text>
+      </g>
+      <rect width="930" height="460" rx="18" fill="url(#dust)"/>
+    </g>
+
+    <g transform="translate(1080 275)">
+      <rect width="520" height="520" rx="14" fill="url(#wall)" filter="url(#glow)"/>
+      <rect x="46" y="58" width="428" height="286" rx="4" fill="#ead7b8" opacity=".72"/>
+      <rect x="46" y="58" width="428" height="286" rx="4" fill="url(#dust)" opacity=".8"/>
+      <text x="78" y="154" class="h2 ink">Niche Games</text>
+      <text x="78" y="214" class="p muted">Selected frame projects onto the wall.</text>
+      <text x="78" y="390" class="hand ink">hover reveals handwritten notes around the contact sheet</text>
+      <path d="M66 414c160 40 286 28 396-36" fill="none" stroke="#111722" stroke-width="2" opacity=".35"/>
+    </g>
+  </g>
+
+  <!-- Concept 02 -->
+  <g transform="translate(80 1220)">
+    <rect width="1740" height="900" rx="36" fill="#120f0c"/>
+    <rect width="1740" height="900" rx="36" fill="url(#grain)" opacity=".9"/>
+    <text x="54" y="76" fill="#f8efe0" class="mono">02 / PROJECTOR WALL</text>
+    <text x="72" y="178" fill="#f8efe0" class="h">Pick a frame. Project a memory.</text>
+    <text x="78" y="230" fill="#decbb8" class="p">The film strip sits low like a physical reel. The selected project appears as light on the wall.</text>
+
+    <path d="M170 610L1260 295L1260 610Z" fill="url(#projectorBeam)" opacity=".56"/>
+    <g transform="translate(120 560)" filter="url(#softShadow)">
+      <rect width="220" height="130" rx="16" fill="#2d2620"/>
+      <circle cx="182" cy="64" r="44" fill="#fae7ba" filter="url(#glow)"/>
+      <circle cx="182" cy="64" r="22" fill="#18120d"/>
+    </g>
+
+    <g transform="translate(520 645)">
+      <rect width="1040" height="120" rx="4" class="film"/>
+      <g>
+        <rect x="28" y="20" width="154" height="80" fill="#c7ae90"/><rect x="214" y="20" width="154" height="80" fill="#607577"/><rect x="400" y="20" width="154" height="80" fill="#d3c4ab"/>
+        <rect x="586" y="20" width="154" height="80" fill="#a97967"/><rect x="772" y="20" width="154" height="80" fill="#d8d0bf"/>
+      </g>
+      <text x="28" y="145" fill="#f3dec2" class="tiny">01</text><text x="214" y="145" fill="#f3dec2" class="tiny">02</text><text x="400" y="145" fill="#f3dec2" class="tiny">03 SELECTED</text><text x="586" y="145" fill="#f3dec2" class="tiny">04</text><text x="772" y="145" fill="#f3dec2" class="tiny">05</text>
+    </g>
+
+    <g transform="translate(1030 245)">
+      <rect width="560" height="350" rx="8" fill="#f4dfbd" opacity=".88" filter="url(#glow)"/>
+      <rect width="560" height="350" rx="8" fill="url(#dust)"/>
+      <text x="46" y="86" class="tiny ink">PROJECTED FRAME 03</text>
+      <text x="46" y="164" class="h2 ink">Tiny Interfaces</text>
+      <text x="46" y="222" class="p muted">A small project opens as a projected note, not a modal.</text>
+      <path d="M44 276h330" stroke="#111722" stroke-width="2" opacity=".22"/>
+      <text x="46" y="318" class="hand ink">what was tested / what changed / what stayed weird</text>
+    </g>
+  </g>
+
+  <!-- Concept 03 -->
+  <g transform="translate(80 2220)">
+    <rect width="1740" height="900" rx="36" fill="#ebe1d2"/>
+    <rect width="1740" height="900" rx="36" fill="url(#grain)"/>
+    <text x="54" y="76" class="mono ink">03 / KODAK ARCHIVE TABLE</text>
+    <text x="72" y="178" class="h ink">A roll of projects found in a drawer.</text>
+    <text x="78" y="230" class="p muted">A tactile archive: negatives, stamped labels, pencil notes, and a projection preview on paper.</text>
+
+    <g transform="translate(95 315)" filter="url(#softShadow)">
+      <rect width="1450" height="250" rx="8" class="film"/>
+      <text x="38" y="34" fill="#d99c50" class="mono">KODAK PORTRA 400 · PLAYGROUND ROLL</text>
+      <g transform="translate(40 58)">
+        <rect width="210" height="142" rx="5" fill="#b7cfd1"/><rect x="250" width="210" height="142" rx="5" fill="#d0a17c"/><rect x="500" width="210" height="142" rx="5" fill="#efe0c7"/>
+        <rect x="750" width="210" height="142" rx="5" fill="#7c8c85"/><rect x="1000" width="210" height="142" rx="5" fill="#c8b6a3"/><rect x="1250" width="120" height="142" rx="5" fill="#ead7bd"/>
+      </g>
+      <g fill="#f4efe6">
+        <rect x="38" y="212" width="34" height="24" rx="7"/><rect x="100" y="212" width="34" height="24" rx="7"/><rect x="162" y="212" width="34" height="24" rx="7"/><rect x="224" y="212" width="34" height="24" rx="7"/>
+        <rect x="1290" y="212" width="34" height="24" rx="7"/><rect x="1352" y="212" width="34" height="24" rx="7"/>
+      </g>
+    </g>
+
+    <g transform="translate(250 625)">
+      <text class="hand ink">01 Niche Games</text>
+      <text x="280" class="hand ink">02 Motion Tests</text>
+      <text x="570" class="hand ink">03 Tiny Interfaces</text>
+      <text x="900" class="hand ink">04 Archive Finds</text>
+    </g>
+
+    <g transform="translate(1180 150)" filter="url(#softShadow)">
+      <rect width="360" height="455" rx="12" fill="#fffaf2"/>
+      <path d="M0 0h360v455H0z" fill="url(#dust)" opacity=".65"/>
+      <text x="34" y="70" class="tiny ink">INSPECTING</text>
+      <text x="34" y="132" class="h2 ink">Motion Tests</text>
+      <text x="34" y="194" class="p muted">The selected negative becomes a paper projection with annotations.</text>
+      <text x="34" y="358" class="hand ink">not polished, but useful</text>
+    </g>
+  </g>
+</svg>

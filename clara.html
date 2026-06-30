@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Clara — Pravallika</title>
+  <meta name="description" content="A responsible AI case study about support, trust, boundaries, and knowing when to hand off to a human.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="ascent.css">
+  <link rel="stylesheet" href="clara.css">
+  <link rel="stylesheet" href="site-shell.css">
+  <script src="ascent.js" defer></script>
+  <script src="site-companion.js" defer></script>
+</head>
+<body class="clara-case">
+  <a href="#main-content" class="skip-link">Skip to content</a>
+  <header class="case-nav">
+    <a href="constellation.html?skipIntro=1">← desktop</a>
+    <span>Clara / case study</span>
+    <a href="#validation">validation ↓</a>
+  </header>
+
+  <main id="main-content">
+    <section class="hero clara-hero">
+      <div class="hero-copy">
+        <p class="eyebrow">CLARA · RESPONSIBLE AI PRODUCT DESIGN</p>
+        <h1>Designing an AI companion that knows when to step aside.</h1>
+        <p class="lede">Clara helps students begin with low-effort burnout support, then makes the transition to therapist-led care visible when AI should not continue alone.</p>
+        <dl class="project-meta">
+          <div><dt>ROLE</dt><dd>Product design · research synthesis</dd></div>
+          <div><dt>SCOPE</dt><dd>Discovery through prototype validation</dd></div>
+          <div><dt>TEAM</dt><dd>Student product team</dd></div>
+          <div><dt>CONTEXT</dt><dd>Student burnout · mental health support</dd></div>
+        </dl>
+      </div>
+      <figure class="hero-figure product-frame clara-frame">
+        <div class="product-frame-bar"><span>CLARA · CARE HANDOFF CONCEPT</span><b>RESPONSIBLE AI</b></div>
+        <div class="hero-screen"><img src="assets/clara/hero.png" alt="Clara mobile product concept showing a warm illustrated AI mental-health companion"></div>
+        <div class="hero-annotations" aria-hidden="true"><span>01 · CHECK IN</span><span>02 · SUPPORT</span><span>03 · HAND OFF</span></div>
+        <figcaption>Clara's interface became evidence for a larger product question: when should AI help, pause, or hand off to a person?</figcaption>
+      </figure>
+    </section>
+
+    <section class="summary" aria-label="Project at a glance">
+      <div><small>WHAT CLARA DOES</small><p>Turns a burnout check-in into a recovery roadmap, lightweight tasks, therapist scheduling, live sessions, and session notes.</p></div>
+      <div><small>THE PRODUCT PROBLEM</small><p>Support had to feel easy to start, but safe enough to stop when the user needed human care.</p></div>
+      <div><small>MY CONTRIBUTION</small><p>I shaped the interaction model, handoff logic, responsible-AI boundaries, prototype flows, and validation criteria.</p></div>
+      <div><small>THE CONSTRAINT</small><p>Clara could not diagnose, perform therapy, hide uncertainty, or move private context without visible user control.</p></div>
+    </section>
+
+    <section class="case-spine" aria-label="Clara case narrative">
+      <article><small>STARTING ASSUMPTION</small><b>A warmer AI companion would make burnout support easier to begin.</b></article>
+      <article><small>WHAT TESTING REVEALED</small><b>Warmth was not enough. Users needed to understand when Clara stopped, what moved to the therapist, and who owned the notes.</b></article>
+      <article><small>PRODUCT RESPONSE</small><b>Design the boundary: low-risk support stays with Clara; interpretation, handoff, and care ownership move to a human.</b></article>
+    </section>
+
+    <section class="research-snapshot" aria-label="Research snapshot">
+      <small>RESEARCH SNAPSHOT</small>
+      <p><strong>12 students</strong> tested self-guided recovery flows. <strong>4 experts</strong> reviewed therapist handoff experiences. <strong>3 of 4 experts</strong> struggled with session-note ownership.</p>
+    </section>
+
+    <section class="story">
+      <div class="label"><span>01</span><small>THE BOUNDARY</small></div>
+      <div class="copy">
+        <p class="eyebrow orange">FROM WELLNESS FEATURE TO CARE BOUNDARY</p>
+        <h2>The real design problem was deciding what AI should never do.</h2>
+        <p>Early framing made Clara sound like an AI recovery companion. That was too broad for a sensitive mental-health domain. The project needed clearer boundaries: which moments are safe for automated support, which require transparency, and which must move toward human judgment.</p>
+        <blockquote class="evidence-quote">
+          <small>DESIGN SHIFT</small>
+          <p>The project moved from designing a warmer companion to designing a bounded AI system.</p>
+          <span>This shifted the work away from "we used AI" and toward the harder design question: how to make AI useful without letting it overreach.</span>
+        </blockquote>
+        <figure class="breakthrough-artifact">
+          <img src="assets/clara/brainstorming.png" alt="Research synthesis board mapping burnout recovery needs, intervention ideas, and care pathways">
+          <div class="artifact-hotspots" aria-label="Whiteboard annotations">
+            <button type="button" class="hotspot hotspot-a"><span>This cluster became the recovery roadmap.</span></button>
+            <button type="button" class="hotspot hotspot-b"><span>This note shifted Clara away from therapist simulation.</span></button>
+            <button type="button" class="hotspot hotspot-c"><span>This branch introduced escalation and human handoff.</span></button>
+          </div>
+          <figcaption><small>THE INSIGHT THAT CHANGED THE PRODUCT</small><b>We stopped designing Clara as a therapist.</b><span>The breakthrough was not a new screen. It was a boundary: Clara could guide reflection and recovery tasks, but it should not become a therapist, diagnosis engine, or invisible data broker.</span></figcaption>
+        </figure>
+        <p class="callout">The interface could not be judged only by whether it felt warm. It had to be judged by whether a user could tell when Clara was listening, when it was uncertain, and when a person needed to take over.</p>
+      </div>
+    </section>
+
+    <section class="story synthesis-section">
+      <div class="label"><span>02</span><small>THE DEBATE</small></div>
+      <div class="copy">
+        <p class="eyebrow orange">TURN RESEARCH INTO PRODUCT JUDGMENT</p>
+        <h2 class="quiet-heading">The question shifted from “what should Clara do?” to “what should Clara refuse to do?”</h2>
+        <p>The messy part was choosing between emotionally appealing directions. A warmer AI coach would be easier to sell. A therapist-like companion would feel more magical. But both created the wrong kind of trust for a mental-health product.</p>
+        <div class="synthesis-compact">
+          <div class="synthesis-compact-head"><span>✦</span><div><small>RESEARCH + DESIGN SYNTHESIS</small><b>From burnout signals to design constraints</b></div><em>3 insights → 3 rules</em></div>
+          <div class="synthesis-input"><small>INPUTS</small><p>User evaluations · expert evaluations · CBI onboarding flow · therapist workflow · prototype walkthroughs</p></div>
+          <div class="synthesis-rules">
+            <article><small>01</small><b>Design for low energy.</b><p><strong>Signal</strong> Students may not have bandwidth for heavy setup.</p><p class="response"><strong>Response</strong> Keep tasks short, skippable, and easy to change modality.</p></article>
+            <article><small>02</small><b>Disclose the AI role.</b><p><strong>Signal</strong> A warm AI can be mistaken for clinical authority.</p><p class="response"><strong>Response</strong> Never imply diagnosis, therapy, or hidden certainty.</p></article>
+            <article><small>03</small><b>Make handoffs visible.</b><p><strong>Signal</strong> Users lost track of therapist sessions and note ownership.</p><p class="response"><strong>Response</strong> Explain why a therapist is recommended and what happens next.</p></article>
+          </div>
+        </div>
+        <div class="decision-debate" aria-label="Product directions considered">
+          <div><small>DIRECTION</small><small>WHY IT WAS TEMPTING</small><small>WHY IT CHANGED</small></div>
+          <article><b>AI coach</b><p>Frequent check-ins could make Clara feel available when students were not ready to ask a person for help.</p><p>Availability risked becoming dependency. Clara needed to support recovery tasks without becoming the primary relationship.</p></article>
+          <article><b>Therapist simulator</b><p>More emotionally responsive conversations would make the prototype feel personal and impressive.</p><p>That blurred clinical authority. In this domain, “feels like therapy” can become more dangerous than useful.</p></article>
+          <article class="chosen"><b>Supervised support</b><p>AI could still reduce activation energy while therapists owned interpretation, care planning, and higher-risk moments.</p><p>The tradeoff was a less magical product, but a more honest one: every sensitive transition needed a visible handoff.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="story muted">
+      <div class="label"><span>03</span><small>DECISION ONE</small></div>
+      <div class="copy">
+        <p class="eyebrow orange">DESIGN FOR LOW ENERGY, NOT IDEAL BEHAVIOR</p>
+        <h2>Support needed to fit the user's capacity, not demand more from it.</h2>
+        <p>Burnout recovery tools often assume focus, time, and motivation. Clara's first interaction had to be short, forgiving, and easy to abandon without guilt. Voice was useful only if it reduced effort; it could not become a performance of therapy.</p>
+        <div class="decision-grid">
+          <article><small>REJECTED DIRECTION</small><b>Long intake before support</b><p>Heavy onboarding would ask for effort at the exact moment the user may have the least capacity.</p></article>
+          <article><small>PRODUCT DECISION</small><b>Begin with a small check-in</b><p>Let the user start with a low-stakes prompt, then progressively reveal options based on comfort and risk.</p></article>
+          <article><small>EDGE CASE</small><b>Let users stop safely</b><p>Pause, skip, or exit states should not punish the user or make recovery feel like another task they failed.</p></article>
+        </div>
+        <div class="prototype-stage prototype-focus">
+          <article>
+            <small>PROTOTYPE 01</small>
+            <h3>Small check-ins reduced the cost of starting because the flow removed commitment.</h3>
+            <p>This flow demonstrates the interaction decision: begin with one lightweight prompt, keep exits visible, then reveal support paths only after the user has started.</p>
+            <ul class="prototype-points">
+              <li><b>One question first</b><span>Start with a low-effort signal instead of a long intake.</span></li>
+              <li><b>Pause without penalty</b><span>Let users stop without making recovery feel like another failed task.</span></li>
+              <li><b>Progressive support</b><span>Move from check-in to recovery options only when the user is ready.</span></li>
+            </ul>
+            <a class="prototype-link" href="https://www.figma.com/proto/fM5UgCSvBKZcMy9uMkxUdX/IDP-Final---Clara?node-id=3-2&t=nKTDmNQOwLCKEjM4-1" target="_blank" rel="noreferrer">Open Figma prototype ↗</a>
+          </article>
+          <figure><video controls playsinline muted preload="metadata" src="assets/clara/flow-1.mp4"></video><figcaption>Annotated proof: the interaction starts with a small prompt, not a heavy onboarding flow.</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="story">
+      <div class="label"><span>04</span><small>DECISION TWO</small></div>
+      <div class="copy">
+        <p class="eyebrow orange">MAKE ESCALATION TRANSPARENT</p>
+        <h2>The handoff had to feel like care, not punishment.</h2>
+        <p>If Clara detected ambiguous or higher-risk language, the system could not keep improvising. The design needed a clear interruption: acknowledge uncertainty, explain why additional support may help, ask consent where appropriate, and make human resources visible.</p>
+        <div class="handoff-simplified">
+          <figure><img src="assets/clara/escalation-sketch.jpeg" alt="Sketch exploring escalation from AI support to human help"><figcaption>Escalation sketch: define the moment the automated flow should stop and a human path should become primary.</figcaption></figure>
+          <div class="handoff-journey" aria-label="Simplified Clara handoff journey">
+            <small>HANDOFF JOURNEY</small>
+            <h3>What happens when Clara stops?</h3>
+            <ol>
+              <li><span>1</span><b>User needs more support</b><p>Language or task patterns suggest Clara should not keep coaching alone.</p></li>
+              <li><span>2</span><b>Clara pauses</b><p>The system names its limit and explains why a therapist may help.</p></li>
+              <li><span>3</span><b>User reviews shared context</b><p>Only useful, user-approved context moves forward.</p></li>
+              <li><span>4</span><b>Therapist owns care</b><p>Interpretation, planning, and session notes belong to the human care path.</p></li>
+            </ol>
+          </div>
+        </div>
+        <div class="tradeoff-card">
+          <div><small>HIGH-STAKES ALTERNATIVE</small><h3>Keep the AI conversation going to preserve engagement.</h3></div>
+          <div><small>WHY WE REJECTED IT</small><p>In a mental-health context, engagement is not the highest-order metric. When risk rises, the product should optimize for safety, clarity, and human support.</p></div>
+        </div>
+        <div class="handoff-audit" aria-label="Clara handoff audit">
+          <div class="audit-copy">
+            <small>HANDOFF AUDIT</small>
+            <h3>The therapy flow could route users to human care, but testing showed the handoff was not legible enough.</h3>
+            <p>The critical product moment sits before and after the call: why this therapist, what context moved, and who owns the notes.</p>
+            <ol>
+              <li><b>Before the session</b><span>Therapy day shows a human provider and past sessions, but it does not yet explain why this therapist was recommended or what Clara will share.</span></li>
+              <li><b>After the session</b><span>Meeting notes appear as a task result, but the source is ambiguous: therapist note, user note, or AI-generated summary?</span></li>
+              <li><b>Design response</b><span>The next pass should add therapist rationale, share-context review, and session-note source labels.</span></li>
+            </ol>
+          </div>
+          <div class="audit-screens">
+            <figure><img src="assets/clara/meeting-details.png" alt="Clara meeting details screen showing therapy day, therapist profile, past notes, and join call action"><figcaption><small>BEFORE SESSION</small><b>Human care is visible, but rationale and data-sharing are not.</b></figcaption></figure>
+            <figure><img src="assets/clara/task-details.png" alt="Clara task details screen showing meeting ended and meeting notes"><figcaption><small>AFTER SESSION</small><b>Notes are accessible, but source and ownership are unclear.</b></figcaption></figure>
+          </div>
+        </div>
+        <div class="handoff-fixes">
+          <article><small>FIX 01</small><b>Therapist rationale</b><p>Show why this therapist was recommended, expected session cadence, and comparable alternatives.</p></article>
+          <article><small>FIX 02</small><b>Share-context review</b><p>Before handoff, summarize the minimum context Clara will share and let users edit non-urgent details.</p></article>
+          <article><small>FIX 03</small><b>Session-note source labels</b><p>Separate therapist notes, user notes, and AI task summaries so ownership is visible.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="story alignment">
+      <div class="label"><span>05</span><small>THE PROTOCOL</small></div>
+      <div class="copy">
+        <p class="eyebrow orange">SYSTEMIC GUARDRAILS</p>
+        <h2 class="quiet-heading">Responsible AI became a failure-state protocol.</h2>
+        <p>Section 04 explains the normal handoff workflow. This section is different: it defines what Clara should do when the system is at risk of overreaching, hiding context, or creating false authority.</p>
+        <div class="boundary-protocol">
+          <div class="protocol-head"><small>FAILURE STATE</small><small>GUARDRAIL</small><small>USER-FACING RECOVERY</small><small>OWNER</small></div>
+          <article><b>Clara sounds like it is diagnosing.</b><p>Block clinical labels and keep CBI-style results framed as signals.</p><p>Explain uncertainty and offer therapist-led interpretation.</p><span>Qualified human support</span></article>
+          <article><b>Private context could move invisibly.</b><p>Require share-context review before non-urgent therapist handoff.</p><p>Show exactly what will be shared, with edit and pause options.</p><span>User consent</span></article>
+          <article><b>Session notes lose source and ownership.</b><p>Separate therapist notes, user notes, and AI task summaries in the notes model.</p><p>Label every note by source, session number, and who can see it.</p><span>Therapist workflow</span></article>
+          <article><b>User language suggests urgent risk.</b><p>Stop the normal AI flow and prioritize immediate human resources.</p><p>Name Clara's limit clearly instead of continuing as a coach.</p><span>Safety protocol</span></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="story testing">
+      <div class="label"><span>06</span><small>THE BREAK</small></div>
+      <div class="copy">
+        <p class="eyebrow orange">WHAT TESTING CHANGED</p>
+        <h2 class="quiet-heading">Validation exposed the real weakness: ownership became invisible.</h2>
+        <p>The prototype did not fail because people disliked the concept. It failed where the system moved between AI tasks, therapist sessions, and recovery history without making ownership obvious enough.</p>
+        <div class="validation-payoff">
+          <article><small>WHAT WORKED</small><b>Experts accepted the boundary model.</b><span>The review suggested the concept was usable, while the small sample kept the finding directional rather than definitive.</span></article>
+          <article class="critical"><small>WHAT BROKE</small><b>Session notes were the highest-failure task.</b><span>3 of 4 experts struggled to find or understand recent therapy notes.</span></article>
+          <article><small>WHAT CHANGED</small><b>The roadmap shifted toward three handoff fixes.</b><span><strong>Therapist rationale</strong>, <strong>share-context review</strong>, and <strong>session-note source labels</strong> became the next product priorities.</span></article>
+        </div>
+        <p class="metric-note">The important validation signal was not that Clara scored well; it was that the highest-failure task pointed directly to the product boundary that needed more design.</p>
+      </div>
+    </section>
+
+    <section class="story outcomes" id="validation">
+      <div class="label"><span>07</span><small>THE OUTCOME</small></div>
+      <div class="copy">
+        <p class="eyebrow">DIRECTIONAL OUTCOME</p>
+        <h2>The concept validated well enough to continue, but the product direction changed.</h2>
+        <p>As a research-driven concept, the outcome was not a post-launch metric, but a validated product strategy: AI support is useful only when its limits, handoff, and ownership model are legible.</p>
+        <div class="outcome-chain">
+          <article><small>SELF-GUIDED FLOWS</small><strong>12</strong><span>students tested low-effort recovery support</span></article>
+          <i>↓</i>
+          <article><small>EXPERT REVIEW</small><strong>3/4</strong><span>struggled with session-note ownership</span></article>
+          <i>↓</i>
+          <article><small>PRODUCT RESPONSE</small><strong>3</strong><span>handoff fixes became priority</span></article>
+        </div>
+        <p class="eyebrow validation-label">NEXT VALIDATION PRIORITY</p>
+        <div class="metrics clara-next">
+          <article><strong>1</strong><span>Can users find recent therapy notes without help?</span></article>
+          <article><strong>2</strong><span>Can they tell what came from Clara, themselves, or the therapist?</span></article>
+          <article><strong>3</strong><span>Can they review what context moves during therapist handoff?</span></article>
+        </div>
+        <p class="metric-note">These are proposed validation directions, not post-launch impact claims. That distinction matters because the domain is sensitive and the prototype was not clinically deployed.</p>
+      </div>
+    </section>
+
+    <section class="reflection">
+      <small>REFLECTION</small>
+      <h2>Trust did not come from making Clara feel more human. It came from making Clara's limits visible.</h2>
+      <p>Clara changed how I think about AI products. Making the system feel supportive mattered, but the harder design work was defining what it refuses to answer, when it asks permission, and how it moves someone toward qualified human care.</p>
+      <a href="constellation.html?skipIntro=1">Return to desktop →</a>
+    </section>
+  </main>
+
+  <dialog class="image-dialog" aria-label="Expanded project image">
+    <button type="button" class="image-dialog-close" aria-label="Close expanded image">×</button>
+    <img alt="Expanded project image">
+    <p></p>
+  </dialog>
+</body>
+</html>

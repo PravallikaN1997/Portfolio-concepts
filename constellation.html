@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>pravallika.space — Desktop</title>
+  <meta name="description" content="Explore Pravallika's product design work, responsible AI case studies, experiments, and personal practice.">
+  <script>
+    (() => {
+      const params = new URLSearchParams(location.search);
+      if (params.get("from") !== "space" && params.get("skipIntro") !== "1") location.replace("index.html");
+    })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="constellation.css">
+  <link rel="stylesheet" href="constellation-theme.css">
+  <link rel="stylesheet" href="constellation-features.css">
+  <link rel="stylesheet" href="constellation-compact.css">
+  <link rel="stylesheet" href="constellation-responsive.css">
+  <link rel="stylesheet" href="constellation-a11y.css">
+  <link rel="stylesheet" href="constellation-chat.css">
+  <link rel="stylesheet" href="constellation-space.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to content</a>
+  <main class="desktop" id="desktop">
+    <span id="main-content" tabindex="-1"></span>
+    <div class="boot" id="boot"><b>pravallika.space</b><span id="bootLine">Loading memories...</span></div>
+    <div class="space-entry-wash" id="spaceEntryWash" aria-hidden="true"></div>
+    <div class="retained-light" id="retainedLight" aria-hidden="true"></div>
+    <svg class="light-constellation" id="lightConstellation" aria-hidden="true"></svg>
+    <div class="light-receipt" id="lightReceipt" aria-live="polite"><span>↳ connected to: pravallika.space</span><span>light retained: <b id="retainedLightCount">0</b></span><span id="lastVisitLine" hidden></span></div>
+    <header class="topbar"><span class="logo-button">✦ pravallika.space</span><div class="system"><button id="lightButton" aria-label="Wake the light collected on the landing"><span>light 0</span><i>✦</i></button><button id="soundToggle" aria-label="Turn interface sounds on"><span>sound off</span><i>♩</i></button><button id="themeToggle" aria-label="Change atmosphere: automatic"><span>auto</span><i>◐</i></button><span id="systemTime" aria-live="off"></span></div></header>
+
+    <section class="center-intro">
+      <small>HI, I’M PRAVALLIKA</small>
+      <h1>Designing for a<br>better <em>future</em>.</h1>
+      <p>This desktop is a small map of my work<br>and the things that shape it.</p>
+      <span>A few things I’ve built. A few things that built me.</span>
+    </section>
+
+    <button class="folder blue daylight drag-item" style="left:8%;top:19%;transform:rotate(-1deg)" aria-label="Open Ascent project">
+      <div class="contents"><i>↟</i><i>82</i></div><div class="front"><em>◡</em></div><b>Ascent</b><span>incident command · case study</span>
+    </button>
+    <button class="folder purple clara drag-item" style="right:9%;top:18%;transform:rotate(1.5deg)" aria-label="Open Clara project">
+      <div class="contents"><i>✦</i><i>AI</i></div><div class="front"><em>•‿•</em></div><b>Clara</b><span>responsible AI · case study</span>
+    </button>
+    <button class="folder sage parks-folder drag-item" style="left:25%;top:22%;transform:rotate(-1.8deg)" aria-label="Open Parks of the Future project">
+      <div class="contents"><i>☘</i><i>2035</i></div><div class="front"><em>⌁</em></div><b>Parks</b><span>public futures · case study</span>
+    </button>
+    <button class="folder yellow wayfinder drag-item" style="left:11%;bottom:17%;transform:rotate(1deg)" aria-label="Open Playground folder">
+      <div class="contents"><i>↗</i><i>play</i></div><div class="front"><em>⌁</em></div><b>Playground</b><span>experiments + drafts</span>
+    </button>
+    <button class="folder green drag-item" style="right:11%;bottom:16%;transform:rotate(-1.5deg)" aria-label="Open About folder">
+      <div class="contents"><i>☺</i><i>hello</i></div><div class="front"><em>˙ᵕ˙</em></div><b>About</b><span>context + interests</span>
+    </button>
+    <button class="folder pink drag-item" style="right:28%;bottom:8%;transform:rotate(-2.5deg)" aria-label="Open Resume folder">
+      <div class="contents"><i>▤</i><i>PDF</i></div><div class="front"><em>•ᴗ•</em></div><b>Resume</b><span>experience + skills</span>
+    </button>
+    <footer class="statusbar">
+      <button id="musicButton" class="music"><span>✦ play something</span><i class="dream-dots" aria-hidden="true"><b></b><b></b><b></b></i></button>
+      <span class="rotating-status"><i id="availabilityDot"></i><b id="statusText" aria-live="polite">available for fun problems</b></span>
+    </footer>
+    <section class="mobile-fallback" aria-labelledby="mobileFallbackTitle">
+      <small>pravallika.space</small>
+      <h1 id="mobileFallbackTitle">This little world works best on desktop.</h1>
+      <p>The case studies are ready here while the full desktop interaction is better with a larger screen.</p>
+      <div>
+        <a href="ascent.html">Read Ascent</a>
+        <a href="clara.html">Read Clara</a>
+        <a href="parks.html">Read Parks</a>
+        <a href="about.html">About</a>
+      </div>
+    </section>
+    <div class="companion-notice" id="companionNotice" role="status" aria-live="polite">
+      <button class="companion" id="companion" aria-label="Notification companion"><i></i><b><u></u><u></u></b><span></span></button>
+      <div class="speech-card" id="speechCard">
+        <small id="noticeLabel">small reminder</small>
+        <p id="noticeMessage">I kept your place.</p>
+        <button id="noticeAction">view</button>
+        <div class="reply-options" id="replyOptions"></div>
+      </div>
+    </div>
+    <div class="preview-window" id="previewWindow" role="dialog" aria-modal="true" aria-labelledby="previewHeading"><div class="preview-title"><div class="window-controls"><button id="closePreview" aria-label="Close project preview"></button><button id="minimizePreview" aria-label="Minimize project preview"></button><button id="maximizePreview" aria-label="Maximize project preview"></button></div><b id="previewTitle">Ascent</b><span aria-hidden="true">pravallika.space project</span></div><div class="preview-content"><small id="previewType">CASE STUDY · INCIDENT COMMAND</small><h2 id="previewHeading">Ascent</h2><p id="previewCopy">Helping incident commanders recognize firefighter risk and make timely rehab decisions.</p><a id="openFullStory" href="ascent.html">open full story →</a></div></div>
+    <div class="vinyl-panel" id="vinylPanel" role="group" aria-label="Music player. Drag to reposition."><audio id="desktopAudio" preload="none"></audio><div class="mini-cover" id="miniCover" aria-hidden="true">✦</div><div class="track-info"><b id="trackTitle">The Story</b><span id="trackArtist">Conan Gray</span></div><button id="previousTrack" class="player-control previous-control" aria-label="Previous track">◀</button><button id="playTrack" class="track-link" type="button" aria-label="Play current track">▶</button><button id="nextTrack" class="player-control next-control" aria-label="Next track">▶</button><div class="progress" aria-hidden="true"><i></i></div><span class="track-time">01:42 / 03:42</span><button id="closeVinyl" aria-label="Close music player">×</button></div>
+  </main>
+  <script src="constellation.js"></script>
+<script>
+(() => {
+  const exactLeaf = label => [...document.querySelectorAll("body *")]
+    .find(el => !el.children.length && el.textContent.trim().toLowerCase() === label.toLowerCase());
+  const folderFor = label => {
+    const leaf = exactLeaf(label);
+    if (!leaf) return null;
+    return leaf.closest("[data-project], [data-folder], .desktop-folder, .folder, .folder-item, .desktop-item, button, a")
+      || leaf.parentElement?.parentElement || leaf.parentElement;
+  };
+  const replaceText = (root, from, to) => {
+    const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
+    let node;
+    while ((node = walker.nextNode())) node.nodeValue = node.nodeValue.replaceAll(from, to);
+  };
+  const route = (item, url) => {
+    if (!item) return;
+    item.dataset.caseStudyRoute = url;
+    item.addEventListener("dblclick", event => {
+      event.preventDefault();
+      event.stopImmediatePropagation();
+      location.href = url;
+    }, true);
+  };
+    const wireProjects = () => {
+    const ascent = folderFor("Ascent");
+    if (!ascent) return;
+    route(ascent, "ascent.html");
+    let clara = folderFor("Clara");
+    if (!clara) {
+      clara = ascent.cloneNode(true);
+      replaceText(clara, "Ascent", "Clara");
+      replaceText(clara, "ascent", "clara");
+      clara.dataset.addedClara = "true";
+      clara.style.position = "absolute";
+      clara.style.left = "73%";
+      clara.style.top = "18%";
+      clara.style.filter = "hue-rotate(24deg)";
+      clara.style.zIndex = "3";
+      ascent.parentElement.appendChild(clara);
+    }
+    route(clara, "clara.html");
+    const parks = folderFor("Parks");
+    route(parks, "parks.html");
+    const about = folderFor("About");
+    route(about, "about.html");
+  };
+  document.readyState === "loading" ? document.addEventListener("DOMContentLoaded", wireProjects) : wireProjects();
+})();
+</script>
+</body>
+</html>

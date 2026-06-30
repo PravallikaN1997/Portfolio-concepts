@@ -1,0 +1,378 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Parks of the Future, a first-prize two-week design sprint with Indy Parks and Recreation.">
+  <title>Parks of the Future — Pravallika</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="parks.css">
+  <link rel="stylesheet" href="site-shell.css">
+  <script src="parks.js" defer></script>
+  <script src="site-companion.js" defer></script>
+</head>
+<body class="parks-case">
+  <a href="#main-content" class="skip-link">Skip to content</a>
+  <div class="reading-progress" aria-hidden="true"></div>
+  <header class="case-nav">
+    <a href="constellation.html?skipIntro=1">&larr; desktop</a>
+    <span>Parks of the Future / case study</span>
+    <a href="#outcome">outcome &darr;</a>
+  </header>
+
+  <main id="main-content">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">SPECULATIVE DESIGN · FUTURE VISION · EXPERIENCE CONCEPT</p>
+        <h1 id="hero-title">Parks that <em>remember, respond, and include.</em></h1>
+        <p class="lede">How might parks evolve over the next 20 years as cities grow denser, climate becomes less predictable, and technology becomes embedded in everyday life, without losing what makes public space human?</p>
+        <dl class="project-meta">
+          <div><dt>ROLE</dt><dd>Concept designer · experience vision</dd></div>
+          <div><dt>TYPE</dt><dd>Speculative public-space strategy</dd></div>
+          <div><dt>PARTNER</dt><dd>Indy Parks &amp; Recreation</dd></div>
+          <div><dt>TIMEFRAME</dt><dd>Two-week design sprint</dd></div>
+          <div><dt>TEAM</dt><dd>Three-person design team</dd></div>
+          <div><dt>RECOGNITION</dt><dd>First-prize sprint concept</dd></div>
+        </dl>
+      </div>
+
+      <div class="park-stage reveal" data-park-state="day" aria-label="Interactive park concept shown by day or night">
+        <div class="stage-toolbar">
+          <div><span>THE SAME PARK</span><b>DIFFERENT WAYS TO BELONG</b></div>
+          <div class="stage-controls">
+            <button class="sound-toggle" type="button" aria-pressed="false"><span aria-hidden="true">♪</span> SOUND OFF</button>
+            <div class="time-switch" role="group" aria-label="Preview the park by day or night">
+              <button class="active" type="button" data-park-mode="day" aria-pressed="true">DAY</button>
+              <button type="button" data-park-mode="night" aria-pressed="false">NIGHT</button>
+            </div>
+          </div>
+        </div>
+
+        <img class="hero-vision" src="parks-2035-vision.png" alt="Speculative 2035 vision of an accessible Indianapolis park with memory markers, climate shade, biodiversity planting, and responsive paths">
+        <div class="horizon-badge"><small>VISION FRAME · 2035</small><b>POST-SPRINT EXTRAPOLATION</b></div>
+
+        <div class="park-sky" aria-hidden="true"><i class="sun-moon"></i><i class="cloud one"></i><i class="cloud two"></i></div>
+        <div class="park-land" aria-hidden="true">
+          <span class="tree tree-one"></span><span class="tree tree-two"></span><span class="tree tree-three"></span>
+          <span class="bench"></span>
+          <span class="person child"></span><span class="person adult"></span><span class="person seated"></span><span class="person elder"></span>
+          <span class="path-light light-one"></span><span class="path-light light-two"></span><span class="path-light light-three"></span><span class="path-light light-four"></span>
+          <svg viewBox="0 0 700 390" focusable="false">
+            <path class="main-path" d="M-20 344c89-57 145-34 218-72 82-43 69-94 157-109 89-15 124 46 214 5 66-30 87-73 151-72"/>
+            <path class="memory-path" d="M354 163c-6-80 42-107 106-129"/>
+          </svg>
+        </div>
+
+        <div class="stage-callout callout-memory"><span>01</span><b>STORIES ACROSS TIME</b><small>Memory Park</small></div>
+        <div class="stage-callout callout-light"><span>02</span><b>PLAY AFTER DARK</b><small>Night Park</small></div>
+        <div class="stage-caption"><span class="mode-copy">DAY · STORIES, PLAY, REST</span><b>ONE PARK · MANY LEVELS OF PARTICIPATION</b></div>
+      </div>
+    </section>
+
+    <section class="problem-bar reveal" aria-label="The problem at a glance">
+      <p class="eyebrow">THE PROBLEM AT A GLANCE</p>
+      <div>
+        <article><small>01</small><b>Park-goers span generations, abilities, cultures, and comfort levels.</b></article>
+        <article><small>02</small><b>New technology can attract people while quietly excluding others.</b></article>
+        <article><small>03</small><b>Safety, maintenance, and access determine whether novelty survives.</b></article>
+        <article><small>04</small><b>Social connection cannot be designed as one mandatory way to participate.</b></article>
+      </div>
+    </section>
+
+    <section class="brief-section">
+      <aside class="section-marker reveal"><span>01</span><small>THE BRIEF</small></aside>
+      <div class="brief-content">
+        <div class="brief-heading reveal">
+          <p class="eyebrow accent">A VIBRANT, HAPPY, HEALTHY INDIANAPOLIS</p>
+          <h2>The challenge was not to make parks more futuristic. It was to make their future more equitable.</h2>
+          <p>Indy Parks asked for actionable ideas that could engage different generations through play, aesthetics, acoustics, maintenance, safety, existing technology, and community collaboration.</p>
+        </div>
+
+        <blockquote class="client-vision reveal">
+          <small>CLIENT VISION · INDY PARKS</small>
+          <p>Welcome all residents, regardless of race, gender, socio-economic status, ability, or identity, to connect to nature, to the community, and to themselves.</p>
+        </blockquote>
+
+        <div class="challenge-equation reveal" aria-label="The design challenge broken into four requirements">
+          <article><span>01</span><b>Different generations</b><p>Not one average park-goer</p></article>
+          <i>+</i>
+          <article><span>02</span><b>Play + atmosphere</b><p>Visual, acoustic, social</p></article>
+          <i>+</i>
+          <article><span>03</span><b>Existing technology</b><p>Useful, legible, maintainable</p></article>
+          <i>+</i>
+          <article><span>04</span><b>Community partners</b><p>Shared ownership over time</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="signals-section" aria-labelledby="signals-title">
+      <div class="signals-heading reveal">
+        <p class="eyebrow">SIGNALS &amp; TENSIONS</p>
+        <h2 id="signals-title">The future was not one prediction. It was a set of pressures parks may need to hold at once.</h2>
+        <p>These signals framed the concept space. They are prompts for exploration, not claims that the sprint forecast one inevitable future.</p>
+      </div>
+      <div class="signal-field reveal" aria-label="Six signals shaping future public parks">
+        <article class="signal climate"><span>01</span><b>Climate adaptation</b><p>Shade, water, resilient planting, and changing seasonal use.</p></article>
+        <article class="signal alone"><span>02</span><b>Urban loneliness</b><p>Low-pressure ways to be near others without forced interaction.</p></article>
+        <article class="signal tech"><span>03</span><b>Embedded technology</b><p>Responsive infrastructure that stays optional and understandable.</p></article>
+        <article class="signal community"><span>04</span><b>Community stewardship</b><p>Residents shape programming, stories, and long-term relevance.</p></article>
+        <article class="signal nature"><span>05</span><b>Biodiversity restoration</b><p>Nature is active infrastructure, not decorative scenery.</p></article>
+        <article class="signal access"><span>06</span><b>Access and agency</b><p>Different bodies, senses, budgets, and energy levels belong.</p></article>
+      </div>
+      <div class="future-worlds reveal">
+        <article><small>FUTURE 01 · LIVING SYSTEM</small><b>The park helps the city heal.</b><p>Ecology, shade, water, and public life reinforce one another.</p></article>
+        <article><small>FUTURE 02 · RESPONSIVE COMMONS</small><b>The park notices without surveilling.</b><p>Light, sound, and paths respond while participation stays voluntary.</p></article>
+        <article><small>FUTURE 03 · COMMUNITY-HELD</small><b>The park changes with its people.</b><p>Local organizations and residents shape what is remembered and programmed.</p></article>
+      </div>
+    </section>
+
+    <section class="day-life" aria-labelledby="day-life-title">
+      <div class="day-life-heading reveal">
+        <p class="eyebrow">A DAY IN THE PARK · FICTIONAL COMPOSITE</p>
+        <h2 id="day-life-title">Meet Maya. The park adapts without deciding who she is.</h2>
+        <p>Maya is a fictional composite created to make the near-future experience tangible, not a research participant or predictive persona.</p>
+      </div>
+      <div class="day-life-route reveal">
+        <article><small>07:40 · ARRIVE</small><b>A calmer path is already available.</b><p>Maya chooses the level route herself. Tactile edges, shade, and frequent seating are permanent infrastructure, not personalized exceptions.</p></article>
+        <i aria-hidden="true">&rarr;</i>
+        <article><small>08:05 · REMEMBER</small><b>A familiar tree holds a family story.</b><p>She listens through the physical marker, reads a transcript, and leaves a short reply without creating an account.</p></article>
+        <i aria-hidden="true">&rarr;</i>
+        <article><small>19:20 · RETURN</small><b>Light makes company optional.</b><p>She sits inside the social field. Others animate the path while steady navigation lighting preserves a clear way home.</p></article>
+      </div>
+    </section>
+
+    <section class="sprint-section" aria-labelledby="sprint-title">
+      <div class="sprint-intro reveal">
+        <p class="eyebrow">CONCEPT DESIGN PROCESS · TWO WEEKS</p>
+        <h2 id="sprint-title">From weak signals to a coherent experience vision.</h2>
+      </div>
+      <ol class="sprint-trail">
+        <li class="reveal"><span>01</span><small>DAYS 01-02</small><b>Signals &amp; tensions</b><p>Frame social, environmental, technological, access, and stewardship shifts.</p></li>
+        <li class="reveal"><span>02</span><small>DAYS 03-05</small><b>Future scenarios</b><p>Imagine living-system, responsive, and community-held park futures.</p></li>
+        <li class="reveal"><span>03</span><small>DAYS 06-08</small><b>Experience vision</b><p>Design behaviors, rituals, discovery, belonging, and relationships with place.</p></li>
+        <li class="reveal"><span>04</span><small>DAYS 09-10</small><b>Concept artifacts</b><p>Make the future discussable through scenarios, vision frames, and service logic.</p></li>
+      </ol>
+    </section>
+
+    <section class="equity-section" aria-labelledby="equity-title">
+      <div class="equity-intro reveal">
+        <p class="eyebrow">DESIGNING WITH EQUITY</p>
+        <h2 id="equity-title">“Open to everyone” is not the same as usable by everyone.</h2>
+        <p>Instead of inventing a single persona, we stress-tested the ideas through common access conditions. Choose a lens to see how the design response changes.</p>
+        <small>These are design lenses, not claims about research participants.</small>
+      </div>
+
+      <div class="lens-picker reveal" role="tablist" aria-label="Choose an access lens">
+        <button class="active" id="lens-phone" role="tab" aria-selected="true" aria-controls="equity-stage" data-lens="phone"><span>01</span>NO SMARTPHONE</button>
+        <button id="lens-mobility" role="tab" aria-selected="false" aria-controls="equity-stage" data-lens="mobility"><span>02</span>LOW MOBILITY</button>
+        <button id="lens-sensory" role="tab" aria-selected="false" aria-controls="equity-stage" data-lens="sensory"><span>03</span>SENSORY NEEDS</button>
+        <button id="lens-night" role="tab" aria-selected="false" aria-controls="equity-stage" data-lens="night"><span>04</span>AFTER DARK</button>
+        <button id="lens-care" role="tab" aria-selected="false" aria-controls="equity-stage" data-lens="care"><span>05</span>CAREGIVING</button>
+      </div>
+
+      <div class="equity-stage reveal" id="equity-stage" role="tabpanel" aria-labelledby="lens-phone" tabindex="0">
+        <article class="reality-card">
+          <small>VISITOR REALITY</small>
+          <span class="lens-icon" aria-hidden="true">NO APP</span>
+          <h3 class="lens-headline">Participation cannot begin with a download.</h3>
+          <p class="lens-need">A phone, data plan, account, or QR code should never be the only entrance to the experience.</p>
+        </article>
+        <div class="equity-bridge" aria-hidden="true"><i></i><b>DESIGN CHANGES</b><i></i></div>
+        <article class="response-card">
+          <small>DESIGN RESPONSE</small>
+          <span class="lens-principle">PHYSICAL-FIRST ACCESS</span>
+          <h3 class="lens-response">Let movement, touch, signage, and staffed moments work independently; make digital layers optional.</h3>
+          <div><span>NO ACCOUNT</span><span>MULTIPLE FORMATS</span><span>VISIBLE INSTRUCTIONS</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="concept-section" aria-labelledby="concept-title">
+      <div class="concept-intro reveal">
+        <p class="eyebrow">THE LEAD CONCEPTS</p>
+        <h2 id="concept-title">Two ways for the park to become an active host.</h2>
+        <p>Memory Park connects people across time. Night Park connects people through movement. Neither requires participation to look the same for everyone.</p>
+      </div>
+
+      <div class="route-switch reveal" role="tablist" aria-label="Choose a park concept">
+        <button class="active" id="memory-tab" role="tab" aria-selected="true" aria-controls="memory-route" data-route="memory">01 · MEMORY PARK</button>
+        <button id="night-tab" role="tab" aria-selected="false" aria-controls="night-route" data-route="night">02 · NIGHT PARK</button>
+      </div>
+
+      <article class="route-panel memory-route active" id="memory-route" role="tabpanel" aria-labelledby="memory-tab">
+        <div class="route-copy">
+          <p class="eyebrow">WHERE STORIES ARE SAFE, SOUND, AND WAITING TO BE FOUND</p>
+          <h3>Give a memory a place to live.</h3>
+          <p>Visitors connect a story to a tree, bench, or sapling. It can be experienced now or intentionally delivered to a chosen person in the future, turning a park object into an intergenerational anchor.</p>
+          <div class="concept-logic">
+            <article><span>01</span><b>Choose a marker</b><p>Tree, bench, garden, or shared object</p></article>
+            <article><span>02</span><b>Leave a story</b><p>Voice, text, drawing, or video</p></article>
+            <article><span>03</span><b>Set its return</b><p>Now, a season, or years later</p></article>
+          </div>
+          <aside class="inclusive-note"><small>EQUITY CHANGES THE CONCEPT</small><p>Multiple formats, clear consent, optional anonymity, translation, physical signage, and non-digital participation are part of the service, not later accommodations.</p></aside>
+        </div>
+
+        <div class="memory-prototype" aria-label="Interactive Memory Park concept demonstration">
+          <div class="prototype-bar"><span>MEMORY GROVE · TREE 08</span><b>TRY THE IDEA</b></div>
+          <img class="vision-image" src="parks-memory-grove.png" alt="Speculative vision frame of a multigenerational Memory Grove with accessible storytelling around a mature tree">
+          <div class="vision-label"><small>VISION FRAME 01</small><b>A memory becomes a shared place, not another feed.</b></div>
+          <div class="memory-composer">
+            <small>HOW SHOULD THIS MEMORY LIVE?</small>
+            <div class="format-options" role="group" aria-label="Choose a memory format">
+              <button class="active" type="button" data-memory-format="voice" aria-pressed="true">VOICE</button>
+              <button type="button" data-memory-format="text" aria-pressed="false">TEXT</button>
+              <button type="button" data-memory-format="drawing" aria-pressed="false">DRAWING</button>
+            </div>
+            <div class="memory-artifact" data-format="voice" aria-live="polite">
+              <span class="artifact-icon" aria-hidden="true">)))</span>
+              <div><b class="artifact-title">A voice from this summer</b><small class="artifact-meta">Audio · transcript available</small></div>
+            </div>
+            <button class="plant-memory" type="button" aria-pressed="false">PLANT THIS MEMORY <span>&rarr;</span></button>
+          </div>
+          <div class="memory-confirmation" aria-live="polite"><small>MEMORY PLANTED</small><b>It can return without being lost.</b><span>CONSENT CAN BE CHANGED AT ANY TIME</span><button class="reset-memory" type="button">TRY ANOTHER MEMORY &orarr;</button></div>
+        </div>
+      </article>
+
+      <article class="route-panel night-route" id="night-route" role="tabpanel" aria-labelledby="night-tab" hidden>
+        <div class="route-copy">
+          <p class="eyebrow">MOVE TO THE RHYTHM · LIGHT UP THE NIGHT</p>
+          <h3>Let the path respond without demanding performance.</h3>
+          <p>Pressure and motion activate light across paths, gathering areas, and surrounding trees. People can dance, walk, roll, tap, rest, watch, or follow a quieter illuminated route.</p>
+          <div class="concept-logic">
+            <article><span>01</span><b>Enter anywhere</b><p>No app, ticket, or fixed starting point</p></article>
+            <article><span>02</span><b>Choose energy</b><p>Calm trail or playful responsive field</p></article>
+            <article><span>03</span><b>Shape together</b><p>Individual inputs build a shared scene</p></article>
+          </div>
+          <aside class="inclusive-note"><small>EQUITY CHANGES THE CONCEPT</small><p>Seated inputs, high-contrast edges, low-sensory hours, passive viewing, gentle brightness, and well-lit exits make play optional and legible.</p></aside>
+        </div>
+
+        <div class="light-prototype" data-energy="calm" aria-label="Interactive responsive-light path demonstration">
+          <div class="prototype-bar"><span>NIGHT PARK · RESPONSIVE PATH</span><b>MOVE ACROSS THE FIELD</b></div>
+          <img class="vision-image" src="parks-night-park.png" alt="Speculative vision frame of an inclusive Night Park with steady safety lighting and responsive play zones">
+          <div class="energy-switch" role="group" aria-label="Choose the park's energy level">
+            <button class="active" type="button" data-energy-mode="calm" aria-pressed="true">CALM</button>
+            <button type="button" data-energy-mode="active" aria-pressed="false">PLAYFUL</button>
+          </div>
+          <div class="light-grid" aria-hidden="true">
+            <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+          </div>
+          <div class="access-badges"><span>NO APP</span><span>SEATED INPUT</span><span>LOW-SENSORY MODE</span></div>
+        </div>
+      </article>
+    </section>
+
+    <section class="blueprint-section" aria-labelledby="blueprint-title">
+      <div class="blueprint-heading reveal">
+        <p class="eyebrow">EXPERIENCE BLUEPRINT</p>
+        <h2 id="blueprint-title">The visible moment only works when an invisible system supports it.</h2>
+        <p>The blueprint connects intimate participation to access, operations, maintenance, consent, and community ownership.</p>
+      </div>
+      <div class="blueprint reveal" role="table" aria-label="Future park experience blueprint">
+        <div class="blueprint-row moments" role="row">
+          <b role="rowheader">MOMENT</b><span role="cell">ARRIVE</span><span role="cell">CHOOSE</span><span role="cell">PARTICIPATE</span><span role="cell">RETURN</span>
+        </div>
+        <div class="blueprint-row resident" role="row">
+          <b role="rowheader">RESIDENT</b><span role="cell">Notice an invitation in the landscape</span><span role="cell">Pick active, quiet, physical, or digital</span><span role="cell">Leave a story or shape the shared light</span><span role="cell">Revisit a memory or community ritual</span>
+        </div>
+        <div class="blueprint-row frontstage" role="row">
+          <b role="rowheader">FRONTSTAGE</b><span role="cell">Clear paths, signs, partner programming</span><span role="cell">Consent, intensity, language, format</span><span role="cell">Marker, sensor field, seating, feedback</span><span role="cell">Delivery, seasonal event, local archive</span>
+        </div>
+        <div class="blueprint-row backstage" role="row">
+          <b role="rowheader">BACKSTAGE</b><span role="cell">Access review and daily readiness</span><span role="cell">Preference logic without mandatory accounts</span><span role="cell">Moderation, translation, sensor health</span><span role="cell">Retention, repair, and deletion policies</span>
+        </div>
+        <div class="blueprint-row partners" role="row">
+          <b role="rowheader">ECOSYSTEM</b><span role="cell">Indy Parks + neighborhood groups</span><span role="cell">Accessibility and cultural advisors</span><span role="cell">Artists, youth groups, local organizations</span><span role="cell">Park staff + city infrastructure teams</span>
+        </div>
+      </div>
+      <div class="blueprint-principle reveal"><span>DESIGN PRINCIPLE</span><b>The park still works when the technology rests.</b><p>Core safety, access, nature, and social use cannot depend on a screen, account, sensor, or perfect maintenance day.</p></div>
+    </section>
+
+    <section class="artifacts-section" aria-labelledby="artifacts-title">
+      <div class="artifacts-heading reveal">
+        <p class="eyebrow">SPECULATIVE ARTIFACTS · 2035</p>
+        <h2 id="artifacts-title">Small evidence from a world where the park is already real.</h2>
+      </div>
+      <div class="artifact-gallery">
+        <article class="future-artifact memory-receipt reveal">
+          <header><span>INDY PARKS · MEMORY GROVE</span><b>08 / 14 / 2035</b></header>
+          <div class="artifact-mark" aria-hidden="true">)))</div>
+          <small>MEMORY RECEIPT · TREE 08</small>
+          <h3>Your story is planted.</h3>
+          <dl><div><dt>FORMAT</dt><dd>Voice + transcript</dd></div><div><dt>RETURN</dt><dd>Next summer</dd></div><div><dt>CONTROL</dt><dd>Change or remove anytime</dd></div></dl>
+        </article>
+        <article class="future-artifact quiet-schedule reveal">
+          <header><span>THIS WEEK IN THE PARK</span><b>ACCESS SCHEDULE</b></header>
+          <small>LOW-SENSORY HOURS</small>
+          <h3>Quiet light. Clear paths. No surprise sound.</h3>
+          <div class="schedule-line"><b>TUE</b><span>18:00</span><i></i><span>20:00</span></div>
+          <div class="schedule-line"><b>SAT</b><span>08:00</span><i></i><span>11:00</span></div>
+          <footer>Responsive zones remain visible at reduced intensity.</footer>
+        </article>
+        <article class="future-artifact stewardship-log reveal">
+          <header><span>COMMUNITY STEWARDSHIP</span><b>Q3 · 2035</b></header>
+          <small>WHAT THE PARK HEARD</small>
+          <h3>Participation is broader when watching counts.</h3>
+          <div class="report-bars"><i style="--value:82%"></i><i style="--value:61%"></i><i style="--value:74%"></i></div>
+          <p>Next cycle: add two seated inputs, extend Spanish-language memory prompts, and preserve the quiet edge of the responsive field.</p>
+          <footer>Reviewed with neighborhood partners and access advisors.</footer>
+        </article>
+      </div>
+      <p class="artifact-disclaimer reveal">These artifacts are post-sprint worldbuilding. They make implications discussable; they are not shipped materials or measured outcomes.</p>
+    </section>
+
+    <section class="system-section">
+      <aside class="section-marker reveal"><span>02</span><small>MAKE IT LAST</small></aside>
+      <div class="system-content">
+        <div class="system-heading reveal">
+          <p class="eyebrow accent">FROM INSTALLATION TO PUBLIC SERVICE</p>
+          <h2>The concept only works if it remains inclusive after launch day.</h2>
+          <p>Equity also means operational durability. The experience needs ownership, maintenance, moderation, accessibility review, and community partners who can keep it culturally relevant.</p>
+        </div>
+        <div class="system-grid reveal">
+          <article><span>01</span><b>Physical + digital</b><p>Every core action has a non-phone path.</p></article>
+          <article><span>02</span><b>Quiet + expressive</b><p>Watching and resting count as participation.</p></article>
+          <article><span>03</span><b>Delight + legibility</b><p>Instructions, exits, and boundaries stay visible.</p></article>
+          <article><span>04</span><b>Technology + stewardship</b><p>Design for repair, moderation, and handoff.</p></article>
+          <article><span>05</span><b>City + community</b><p>Partners shape programming and local stories.</p></article>
+          <article><span>06</span><b>Novelty + continuity</b><p>The park still works when technology rests.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="outcome" id="outcome">
+      <div class="award-mark reveal" aria-hidden="true"><span>1</span><i>ST</i><b>PRIZE</b></div>
+      <div class="reveal">
+        <p class="eyebrow">SPRINT OUTCOME</p>
+        <h2>A first-prize strategy for parks that remember, respond, and welcome more people in.</h2>
+        <p>The sprint produced two lead concepts, supporting explorations, scenarios, precedent research, audience and context framing, and a more expansive definition of participation. It did not validate a built park or measure public impact; the result was a recognized concept direction and a stronger set of questions for feasibility and community co-design.</p>
+        <div class="outcome-links">
+          <a href="https://pitch.com/public/06ad79ec-dcd6-444f-a846-b52230c32698/54360438-bfe0-4891-a68f-c28c86e2fd9b" target="_blank" rel="noreferrer">view sprint deck &nearr;</a>
+          <a href="https://www.figma.com/board/dlPBlLyS9obR5Bam4iH984/Design-Sprint-ideas?node-id=0-1&amp;t=32PVNgUBXKEkOysO-1" target="_blank" rel="noreferrer">open brainstorm &nearr;</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="next-section">
+      <div class="next-heading reveal">
+        <p class="eyebrow">WHAT I WOULD DO NEXT</p>
+        <h2>Move from designing for communities to designing with them.</h2>
+      </div>
+      <div class="next-grid">
+        <article class="reveal"><small>CO-DESIGN</small><b>Invite youth, older adults, disabled residents, caregivers, and neighborhood groups to reshape the concepts.</b></article>
+        <article class="reveal"><small>PROTOTYPE IN PLACE</small><b>Test one memory marker and one responsive path zone before proposing park-wide infrastructure.</b></article>
+        <article class="reveal"><small>MEASURE ACCESS</small><b>Track who can discover, understand, join, leave, and return, not only total engagement.</b></article>
+        <article class="reveal"><small>PLAN STEWARDSHIP</small><b>Define consent, moderation, repair, data retention, partner roles, and long-term ownership.</b></article>
+      </div>
+    </section>
+
+    <section class="reflection">
+      <p class="eyebrow">REFLECTION</p>
+      <h2>The future of public space is not one spectacular interaction. It is more people feeling that the space includes them.</h2>
+      <p>This sprint taught me to design participation as a spectrum: active or quiet, physical or digital, individual or shared, spontaneous or carried across generations.</p>
+      <a href="constellation.html?skipIntro=1">back to desktop &rarr;</a>
+    </section>
+  </main>
+</body>
+</html>

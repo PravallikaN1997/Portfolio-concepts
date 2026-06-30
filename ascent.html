@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ascent — Pravallika</title>
+  <meta name="description" content="How Pravallika designed and shipped a readiness-and-rehab workflow for high-stakes incident command.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="ascent.css">
+  <link rel="stylesheet" href="site-shell.css">
+  <script src="ascent.js" defer></script>
+  <script src="site-companion.js" defer></script>
+</head>
+<body class="ascent-case">
+  <a href="#main-content" class="skip-link">Skip to content</a>
+  <header class="case-nav">
+    <a href="constellation.html?skipIntro=1">← desktop</a>
+    <span>Ascent / case study</span>
+    <a href="#outcomes">outcomes ↓</a>
+  </header>
+
+  <main id="main-content">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">ASCENT INTEGRATED TECH · PRODUCT DESIGN</p>
+        <h1>Helping incident commanders recognize risk and move firefighters to rehab.</h1>
+        <p class="lede">Within a cross-functional team of five, I designed and shipped a readiness-and-rehab workflow inside Ascent's incident command product, turning complex telemetry into a focused view of who needs attention and what to do next.</p>
+        <dl class="project-meta">
+          <div><dt>ROLE</dt><dd>Product design · research &amp; interaction</dd></div>
+          <div><dt>SCOPE</dt><dd>Discovery through shipped feature</dd></div>
+          <div><dt>TEAM</dt><dd>Cross-functional team of five</dd></div>
+          <div><dt>CONTEXT</dt><dd>High-stakes incident response</dd></div>
+        </dl>
+      </div>
+      <figure class="hero-figure product-frame">
+        <div class="product-frame-bar"><span>ASCENT COMMAND · LIVE INCIDENT</span><b>SHIPPED FEATURE</b></div>
+        <div class="hero-screen"><img class="expandable" data-expandable src="assets/ascent/final-overview.png" alt="Shipped Ascent overview showing a floor plan, critical firefighters, and a rehab list" data-lightbox-caption="Shipped overview: incident commanders can locate risk, review readiness, and send a firefighter to rehab without leaving the incident view."></div>
+        <div class="hero-annotations" aria-hidden="true"><span>01 · TRIAGE RISK</span><span>02 · REVIEW READINESS</span><span>03 · ACT IN CONTEXT</span></div>
+        <figcaption>Shipped overview: locate risk, review readiness, and act without leaving the incident view.</figcaption>
+      </figure>
+    </section>
+
+    <section class="summary" aria-label="Project at a glance">
+      <div><small>THE PROBLEM</small><p>Ascent could collect and display incident data, but commanders still had to interpret too much information before deciding who needed help.</p></div>
+      <div><small>MY CONTRIBUTION</small><p>I led research synthesis, workflow definition, interaction design, prototype testing, and refinement of the readiness-and-rehab flow within a cross-functional team of five.</p></div>
+      <div><small>THE RESULT</small><p>A shipped workflow that leads with actionable readiness, keeps supporting telemetry available, and makes rehab explicit.</p></div>
+      <div><small>VALIDATION SIGNAL</small><p>Pre-launch evaluation recorded an 82 SUS and 4.2/5 prototype satisfaction. These are directional validation signals, not post-launch impact.</p></div>
+    </section>
+
+    <section class="story">
+      <div class="label"><span>01</span><small>CONTEXT</small></div>
+      <div class="copy">
+        <p class="eyebrow orange">DESIGNING INSIDE AN ACTIVE COMMAND SYSTEM</p>
+        <h2>The feature had to earn attention in an environment already full of it.</h2>
+        <p>During active incidents, incident commanders monitor crews, radio traffic, changing hazards, and evacuation procedures simultaneously. Delayed decisions around firefighter exhaustion and rehabilitation can increase risk for crews already operating under extreme physical strain. The challenge was not presenting more data; it was helping commanders recognize who needed attention quickly enough to act.</p>
+        <div class="image-pair">
+          <figure><img class="artifact-image" src="assets/ascent/interface-clean-1.avif" alt="Existing Ascent tablet interface showing an incident map, firefighter markers, and a compact readiness popup"><figcaption>The existing command interface already combined maps, assignments, and incident controls.</figcaption></figure>
+          <figure><img src="assets/ascent/field-context.png" alt="Firefighters, fire engines, and smoke during a live training incident"><figcaption>The real operating context is physical, social, and time-sensitive.</figcaption></figure>
+        </div>
+        <blockquote class="evidence-quote">
+          <small>PROTOTYPE-TESTING FEEDBACK</small>
+          <p>“I won't have time to review every metric.”</p>
+          <span>That constraint reframed the problem from displaying health data to supporting a rapid triage decision.</span>
+        </blockquote>
+        <p class="callout">The core design question became: how might the system help an incident commander recognize risk and make a rehab decision without asking them to analyze a dashboard?</p>
+      </div>
+    </section>
+
+    <section class="story synthesis-section">
+      <div class="label"><span>02</span><small>SYNTHESIS</small></div>
+      <div class="copy">
+        <p class="eyebrow orange">FROM RESEARCH TO PRODUCT PRINCIPLES</p>
+        <h2>We first had to decide what information deserved to interrupt the incident.</h2>
+        <p>I synthesized stakeholder conversations, domain research, field context, and prototype feedback to rank what deserved attention under pressure: what should interrupt, what should stay one step deeper, and what should become an action.</p>
+        <div class="insight-chain" aria-label="Research observations, insights, and product principles">
+          <article><small>OBSERVATION</small><p>Commanders already split attention across people, radio, map, and incident state.</p><b>Insight: another alert would compete for attention.</b><span>Principle: interrupt only when action is required.</span></article>
+          <article><small>OBSERVATION</small><p>Commanders checked location before interpreting health signals.</p><b>Insight: risk only mattered when tied to place.</b><span>Principle: context comes before diagnosis.</span></article>
+          <article><small>OBSERVATION</small><p>Rehab status disappeared once the firefighter left the main incident flow.</p><b>Insight: actions needed continuity across screens.</b><span>Principle: keep rehab visible and actionable.</span></article>
+        </div>
+        <div class="synthesis-card">
+          <div class="synthesis-head"><span>✦</span><div><small>RESEARCH SYNTHESIS</small><b>Turning observations into product principles</b></div><em>4 inputs → 3 decisions</em></div>
+          <div class="synthesis-body">
+            <div><small>INPUTS</small><p>Stakeholder interviews · field observation · secondary research · prototype tests</p></div>
+            <div class="synthesis-arrow">↓</div>
+            <ol>
+              <li><b>Lead with readiness, not telemetry.</b><span>Show the operational implication before the underlying signals.</span></li>
+              <li><b>Design the overview for triage.</b><span>Help commanders locate and review the people who need attention first.</span></li>
+              <li><b>Make rehab visible and actionable.</b><span>Keep supporting context one step away and the next action explicit.</span></li>
+            </ol>
+          </div>
+        </div>
+        <div class="image-pair research-images">
+          <figure><img src="assets/ascent/research-plan.jpg" alt="Research-planning whiteboard mapping methods, stakeholders, and incident-response roles"><div class="artifact-hotspots" aria-label="Research-plan annotations"><button type="button" class="hotspot hotspot-a"><span>Mapped who depends on the command view.</span></button><button type="button" class="hotspot hotspot-c"><span>Separated field context from interface assumptions.</span></button></div><figcaption>This map clarified that the command view had to serve the incident commander first, while still accounting for firefighter, EMS, and rehab handoffs.</figcaption></figure>
+          <figure><img src="assets/ascent/assumptions.jpg" alt="Product assumptions whiteboard documenting alert behavior, first-screen constraints, and rejected ideas"><div class="artifact-hotspots" aria-label="Assumption-board annotations"><button type="button" class="hotspot hotspot-b"><span>This is where alerts became a triage question.</span></button><button type="button" class="hotspot hotspot-c"><span>Rejected “show everything” before committing to overview hierarchy.</span></button></div><figcaption>This board turned assumptions into rules: show only what supports triage, defer the rest, and make rejected directions explicit.</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="story muted">
+      <div class="label"><span>03</span><small>DECISION ONE</small></div>
+      <div class="copy">
+        <p class="eyebrow orange">DESIGN THE OVERVIEW FOR TRIAGE</p>
+        <h2>Replace a wall of telemetry with an answer to “who needs attention?”</h2>
+        <p>The existing system already carried incident context, firefighter identity, biometrics, map information, and event history. Our redesign did not need to add more data; it needed to turn that data into a triage workflow commanders could act on quickly.</p>
+        <div class="comparison" data-comparison>
+          <div class="comparison-controls" role="group" aria-label="Compare existing and redesigned Ascent interfaces">
+            <button type="button" class="active" data-view="before" aria-pressed="true">EXISTING SYSTEM</button>
+            <button type="button" data-view="after" aria-pressed="false">REDESIGNED WORKFLOW</button>
+          </div>
+          <figure>
+            <img class="expandable artifact-image" data-expandable data-before src="assets/ascent/existing-readiness-clean.png" alt="Existing Ascent readiness interface showing firefighter profile, vitals, tank information, map, and event history" data-lightbox-caption="Existing system: firefighter identity, vitals, location, tank information, and history were available, but commanders still had to synthesize the action.">
+            <img class="expandable" data-expandable data-after hidden src="assets/ascent/final-overview.png" alt="Redesigned readiness overview focused on critical firefighters and rehab" data-lightbox-caption="Redesigned workflow: readiness, location, and rehab actions form a focused triage path.">
+            <figcaption data-caption>The system had the signals. The redesign clarified the decision: who needs attention, where are they, and what should happen next?</figcaption>
+          </figure>
+        </div>
+        <div class="decision-grid">
+          <article><small>REJECTED DIRECTION</small><b>Make every available biometric visible on the overview</b><p>This treated all signals as equally urgent and required commanders to interpret the data while coordinating an active incident.</p></article>
+          <article><small>REJECTED DIRECTION</small><b>Use event history as the primary explanation</b><p>History is valuable for investigation, but it is not the fastest path to deciding who needs support now.</p></article>
+          <article><small>PRODUCT DECISION</small><b>Lead with readiness, location, and visible actions</b><p>The overview supports triage; underlying telemetry and history remain available when deeper context is needed.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="story">
+      <div class="label"><span>04</span><small>DECISION TWO</small></div>
+      <div class="copy">
+        <p class="eyebrow orange">MAKE REHAB A WORKFLOW, NOT A LABEL</p>
+        <h2>Connect recognition, review, and action without hiding the next step.</h2>
+        <p>Testing showed that commanders needed to see who was already in rehab and that hidden calls to action would be ineffective. The redesigned workflow introduced a dedicated rehab state, persistent actions, and a details view that explains the readiness summary.</p>
+        <div class="image-pair">
+          <figure><img src="assets/ascent/rehab-flow.jpg" alt="Whiteboard decision flow for sending a firefighter to rehab or returning them to the incident"><div class="artifact-hotspots" aria-label="Rehab-flow annotations"><button type="button" class="hotspot hotspot-a"><span>This branch became the dedicated In Rehab state.</span></button><button type="button" class="hotspot hotspot-c"><span>Edge cases clarified when the action should stay visible.</span></button></div><figcaption>This flow changed rehab from a status label into a decision path: send to rehab, keep visible, or return to the incident.</figcaption></figure>
+          <figure><img class="expandable" data-expandable src="assets/ascent/final-details.png" alt="Final firefighter details view with readiness, location, oxygen tank, and key metrics" data-lightbox-caption="Shipped details view: supporting telemetry explains the readiness state while the rehab action remains visible."><figcaption>Details explain the readiness state while keeping “Send to rehab” visible. Click to inspect.</figcaption></figure>
+        </div>
+        <div class="flow">
+          <article><span>1</span><b>Recognize</b><p>A critical readiness state surfaces.</p></article>
+          <i>→</i>
+          <article><span>2</span><b>Review</b><p>Location and key signals provide context.</p></article>
+          <i>→</i>
+          <article><span>3</span><b>Act</b><p>The commander sends the firefighter to rehab.</p></article>
+        </div>
+        <div class="tradeoff-card">
+          <div><small>HIGH-STAKES ALTERNATIVE</small><h3>Hide the rehab action until after a deeper review.</h3></div>
+          <div><small>WHY WE REJECTED IT</small><p>Testing indicated that hidden calls to action would be ineffective under pressure. The shipped direction keeps the action persistent while preserving the evidence needed to make it responsibly.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="story alignment">
+      <div class="label"><span>05</span><small>ALIGNMENT</small></div>
+      <div class="copy">
+        <p class="eyebrow orange">TURN RESEARCH INTO BUILDABLE RULES</p>
+        <h2>I made the product logic explicit so the team could align on what to surface, defer, and make actionable.</h2>
+        <p>Within the cross-functional team of five, I translated the research into product principles, decision flows, assumptions, rejected directions, and interaction states. This gave the team a shared basis for discussing what belonged in the overview, what remained in details, and how the rehab workflow should behave.</p>
+        <div class="alignment-grid">
+          <article><small>SURFACE</small><b>Critical readiness, location, and action</b><p>The minimum information needed to recognize and respond.</p></article>
+          <article><small>DEFER</small><b>Raw telemetry and event history</b><p>Supporting evidence stays available without dominating triage.</p></article>
+          <article><small>MAKE EXPLICIT</small><b>Assumptions, thresholds, and edge cases</b><p>Open questions remain visible for expert review and future validation.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="story testing">
+      <div class="label"><span>06</span><small>ITERATION</small></div>
+      <div class="copy">
+        <p class="eyebrow orange">LET FEEDBACK CHANGE THE PRODUCT</p>
+        <h2>The strongest changes came from testing what commanders would ignore.</h2>
+        <div class="testing-layout">
+          <figure><img src="assets/ascent/testing-feedback.png" alt="Annotated early wireframe showing usability findings about metrics, oxygen-tank information, and the rehab state"><figcaption>Testing feedback annotated directly on an early concept.</figcaption></figure>
+          <div class="feedback-list">
+            <article><small>FEEDBACK</small><b>“I won't have time to review every metric.”</b><span>→ Lead with overall readiness and move supporting metrics to details.</span></article>
+            <article><small>FEEDBACK</small><b>Commanders may need to review firefighters already in rehab.</b><span>→ Add a dedicated “In Rehab” view.</span></article>
+            <article><small>FEEDBACK</small><b>Hidden calls to action may not work under pressure.</b><span>→ Keep “Send to rehab” visible beside the decision context.</span></article>
+            <article><small>FEEDBACK</small><b>Color and short summaries help quick interpretation.</b><span>→ Use status, hierarchy, and language together rather than color alone.</span></article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="story outcomes" id="outcomes">
+      <div class="label"><span>07</span><small>OUTCOME</small></div>
+      <div class="copy">
+        <p class="eyebrow">SHIPPED OUTCOME</p>
+        <h2>Ascent shipped readiness as an operational decision flow, not another dashboard.</h2>
+        <p>Before, commanders interpreted signals across telemetry, location, and incident state before acting. After, they could identify who needed intervention, review the supporting context, and initiate rehab from the same workflow.</p>
+        <p>The redesign shifted Ascent's existing sensing capability from monitoring data into decision support, strengthening the value of the hardware ecosystem already used in the field.</p>
+        <div class="shipped-grid">
+          <article><span>01</span><b>Recognize risk</b><p>A critical-firefighter overview leads with readiness and location.</p></article>
+          <article><span>02</span><b>Review context</b><p>Supporting metrics explain the readiness state one step deeper.</p></article>
+          <article><span>03</span><b>Act visibly</b><p>A persistent rehab action and dedicated In Rehab state complete the workflow.</p></article>
+        </div>
+        <p class="eyebrow validation-label">PRE-LAUNCH VALIDATION EVIDENCE</p>
+        <div class="metrics">
+          <article><strong>4.2/5</strong><span>pre-launch prototype satisfaction</span></article>
+          <article><strong>82</strong><span>pre-launch system usability score</span></article>
+          <article><strong>85%</strong><span>original research pain points addressed in launch scope</span></article>
+        </div>
+        <p class="metric-note">Directional pre-launch evaluation from the original project materials. These figures are not post-launch impact metrics; the original sample size and study methodology were not preserved.</p>
+        <aside><small>WHAT I WOULD VALIDATE NEXT</small><p>Readiness calculations and thresholds with medical and fire-safety experts; alert timing and false positives; and the workflow during longer, more complex simulations.</p></aside>
+      </div>
+    </section>
+
+    <section class="reflection">
+      <small>REFLECTION</small>
+      <h2>Senior product work is often deciding what the interface should refuse to show.</h2>
+      <p>This project strengthened how I translate domain complexity into a focused product direction. The most important design move was not adding telemetry. It was defining the decision the system should support, then making evidence, context, and action arrive in the right order.</p>
+      <a href="constellation.html?skipIntro=1">Return to desktop →</a>
+    </section>
+  </main>
+  <dialog class="image-dialog" aria-label="Expanded project image">
+    <button type="button" class="image-dialog-close" aria-label="Close expanded image">×</button>
+    <img alt="Expanded project image">
+    <p></p>
+  </dialog>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1900" height="4300" viewBox="0 0 1900 4300">
+  <defs>
+    <style>
+      .mono{font:800 17px ui-monospace,Menlo,monospace;letter-spacing:.14em}.tiny{font:800 12px ui-monospace,Menlo,monospace;letter-spacing:.12em}
+      .h{font:900 82px Inter,Arial,sans-serif;letter-spacing:-.06em}.h2{font:900 46px Inter,Arial,sans-serif;letter-spacing:-.035em}.p{font:500 23px Inter,Arial,sans-serif}
+      .serif{font:700 76px Georgia,serif;letter-spacing:-.03em}.italic{font:italic 700 54px Georgia,serif}
+      .ink{fill:#111722}.muted{fill:#677386}.paper{fill:#f4efe6}.cream{fill:#fffaf2}.dark{fill:#101722}.line{stroke:#d8d0c4;stroke-width:2}.inkline{stroke:#111722;stroke-width:3}
+    </style>
+    <filter id="shadow"><feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#111722" flood-opacity=".22"/></filter>
+    <filter id="soft"><feDropShadow dx="0" dy="10" stdDeviation="9" flood-color="#111722" flood-opacity=".14"/></filter>
+    <pattern id="grain" width="16" height="16" patternUnits="userSpaceOnUse"><circle cx="2" cy="4" r=".8" fill="#111722" opacity=".05"/><circle cx="11" cy="12" r=".7" fill="#111722" opacity=".035"/><circle cx="8" cy="3" r=".45" fill="#fff" opacity=".3"/></pattern>
+    <linearGradient id="night" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#111827"/><stop offset=".55" stop-color="#263650"/><stop offset="1" stop-color="#705b76"/></linearGradient>
+    <linearGradient id="canal" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#241b23"/><stop offset=".42" stop-color="#5c4635"/><stop offset=".7" stop-color="#c78b3c"/><stop offset="1" stop-color="#0e3942"/></linearGradient>
+    <linearGradient id="moon" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f5ead8"/><stop offset=".58" stop-color="#eadcc7"/><stop offset="1" stop-color="#c6b49b"/></linearGradient>
+  </defs>
+  <rect width="1900" height="4300" fill="#eee8df"/>
+  <rect width="1900" height="4300" fill="url(#grain)"/>
+  <text x="84" y="92" class="mono ink">PLAYGROUND / DEEPER VISUAL DIRECTIONS</text>
+  <text x="84" y="136" class="p muted">Four scene-based concepts. The projects are not cards; they are objects inside a small world.</text>
+
+  <!-- TV wall -->
+  <g transform="translate(80 210)">
+    <rect width="1740" height="900" rx="36" fill="#f1eadf"/>
+    <rect width="1740" height="900" rx="36" fill="url(#grain)"/>
+    <text x="54" y="76" class="mono ink">01 / TV WALL: MEMORY CHANNELS</text>
+    <text x="72" y="185" class="h ink">Tune into a small idea.</text>
+    <text x="78" y="235" class="p muted">Each vintage TV is one project. Hover flickers the channel; click expands the broadcast.</text>
+    <g transform="translate(118 360)">
+      <g filter="url(#shadow)">
+        <rect x="0" y="0" width="360" height="250" rx="28" fill="#6f8064" stroke="#33291f" stroke-width="5"/>
+        <rect x="34" y="34" width="232" height="150" rx="26" fill="#111722"/>
+        <rect x="54" y="54" width="192" height="110" rx="18" fill="#e5c7a1"/>
+        <text x="72" y="118" class="h2 ink">Niche</text>
+        <circle cx="305" cy="64" r="24" fill="#2e281f"/><circle cx="305" cy="128" r="24" fill="#2e281f"/>
+        <text x="36" y="220" class="tiny ink">CHANNEL 01 / NICHE GAMES</text>
+      </g>
+      <g transform="translate(430 -40)" filter="url(#shadow)">
+        <rect width="420" height="300" rx="30" fill="#b8c7c0" stroke="#33291f" stroke-width="5"/>
+        <rect x="38" y="38" width="285" height="180" rx="28" fill="#111722"/>
+        <rect x="60" y="60" width="240" height="136" rx="20" fill="#b7dfff"/>
+        <path d="M92 150c68-60 128-60 196 0" fill="none" stroke="#111722" stroke-width="7"/>
+        <text x="58" y="262" class="tiny ink">CHANNEL 02 / MOTION TESTS</text>
+      </g>
+      <g transform="translate(930 10)" filter="url(#shadow)">
+        <rect width="360" height="250" rx="28" fill="#9b8168" stroke="#33291f" stroke-width="5"/>
+        <rect x="34" y="34" width="232" height="150" rx="26" fill="#111722"/>
+        <rect x="54" y="54" width="192" height="110" rx="18" fill="#ffd6df"/>
+        <text x="72" y="118" class="h2 ink">Tiny</text>
+        <circle cx="305" cy="64" r="24" fill="#2e281f"/><circle cx="305" cy="128" r="24" fill="#2e281f"/>
+        <text x="36" y="220" class="tiny ink">CHANNEL 03 / TINY UI</text>
+      </g>
+    </g>
+    <rect x="1210" y="330" width="390" height="420" rx="26" fill="#101722" filter="url(#soft)"/>
+    <text x="1248" y="388" fill="#c6d2df" class="tiny">ON AIR</text>
+    <text x="1248" y="456" fill="#fffaf2" class="h2">Archive Finds</text>
+    <text x="1248" y="515" fill="#c6d2df" class="p">A project preview behaves like a quiet broadcast: one artifact, one line of context, one takeaway.</text>
+    <rect x="1248" y="636" width="180" height="46" rx="23" fill="#fffaf2"/><text x="1282" y="666" class="tiny ink">OPEN CHANNEL</text>
+  </g>
+
+  <!-- Postcard -->
+  <g transform="translate(80 1210)">
+    <rect width="1740" height="900" rx="36" fill="url(#canal)"/>
+    <rect width="1740" height="900" rx="36" fill="url(#grain)" opacity=".55"/>
+    <text x="54" y="76" fill="#fffaf2" class="mono">02 / POSTCARD: FLOATING PROJECT LETTERS</text>
+    <text x="72" y="185" fill="#fffaf2" class="serif">Postcards from small experiments.</text>
+    <text x="78" y="236" fill="#f1dcc2" class="p">A moving lofi background sets the mood. Projects arrive as envelopes you open.</text>
+    <g transform="translate(590 330)" filter="url(#shadow)">
+      <rect width="560" height="340" rx="10" fill="#f7eee0"/>
+      <path d="M0 0l280 188L560 0" fill="none" stroke="#d7c8b6" stroke-width="4"/>
+      <path d="M0 340l220-150M560 340L340 190" fill="none" stroke="#d7c8b6" stroke-width="4"/>
+      <text x="55" y="95" class="tiny ink">ARRIVED TODAY</text>
+      <text x="55" y="165" class="h2 ink">Motion Tests</text>
+      <text x="55" y="220" class="p muted">A small study in timing, friction, and delight.</text>
+      <rect x="55" y="260" width="170" height="42" rx="21" fill="#111722"/><text x="86" y="287" fill="#fffaf2" class="tiny">OPEN NOTE</text>
+    </g>
+    <g opacity=".8">
+      <circle cx="240" cy="680" r="46" fill="#ffe29c"/><circle cx="1410" cy="620" r="34" fill="#bcecff"/><rect x="1320" y="260" width="220" height="80" rx="40" fill="#ffcf8f" opacity=".75"/>
+      <text x="124" y="792" fill="#fffaf2" class="italic">The page feels slower, warmer, more personal.</text>
+    </g>
+  </g>
+
+  <!-- Film roll -->
+  <g transform="translate(80 2210)">
+    <rect width="1740" height="900" rx="36" fill="#f6f0e7"/>
+    <text x="54" y="76" class="mono ink">03 / FILM ROLL: SCROLLABLE MEMORY STRIP</text>
+    <text x="72" y="185" class="h ink">A reel of unfinished scenes.</text>
+    <text x="78" y="236" class="p muted">Projects sit in a film strip. Selecting one enlarges the frame with handwritten context.</text>
+    <rect x="90" y="330" width="1560" height="230" rx="22" fill="#111722"/>
+    <g transform="translate(126 360)">
+      <rect width="300" height="170" rx="16" fill="#cfe5ff"/><text x="32" y="100" class="h2 ink">Niche</text>
+      <rect x="342" width="300" height="170" rx="16" fill="#ffd4df"/><text x="374" y="100" class="h2 ink">Motion</text>
+      <rect x="684" width="300" height="170" rx="16" fill="#d9ff73"/><text x="716" y="100" class="h2 ink">Tiny UI</text>
+      <rect x="1026" width="300" height="170" rx="16" fill="#ffbd82"/><text x="1058" y="100" class="h2 ink">Finds</text>
+    </g>
+    <rect x="370" y="610" width="960" height="190" rx="28" fill="#fffaf2" stroke="#d8d0c4" stroke-width="3" filter="url(#soft)"/>
+    <text x="420" y="675" class="tiny ink">FRAME 03 / SELECTED</text>
+    <text x="420" y="735" class="h2 ink">Tiny Interfaces</text>
+    <text x="820" y="735" class="italic muted">“small controls, big mood”</text>
+    <text x="420" y="778" class="p muted">Best for a portfolio section that should feel tactile but still easy to skim.</text>
+  </g>
+
+  <!-- Moon radio -->
+  <g transform="translate(80 3210)">
+    <rect width="1740" height="900" rx="36" fill="url(#moon)"/>
+    <rect width="1740" height="900" rx="36" fill="url(#grain)"/>
+    <text x="54" y="76" class="mono ink">04 / MOON RADIO: TUNE THE FREQUENCY</text>
+    <text x="72" y="182" style="font:900 90px Georgia,serif;letter-spacing:-.04em" class="ink">The Playground Radio</text>
+    <text x="78" y="236" class="p muted">A strange device where each frequency reveals a project transmission.</text>
+    <g transform="translate(110 330)" filter="url(#shadow)">
+      <rect width="760" height="430" rx="18" fill="#1a1a18" stroke="#0a0a09" stroke-width="6"/>
+      <rect x="48" y="48" width="420" height="110" rx="8" fill="#090b0d" stroke="#c7b99f" stroke-width="3"/>
+      <text x="78" y="118" fill="#fffaf2" class="mono">PLAYGROUND  FM  04</text>
+      <rect x="54" y="190" width="590" height="84" rx="6" fill="#f6ead5"/>
+      <path d="M86 232h520" stroke="#111722" stroke-width="3"/><path d="M200 205v54M340 205v54M480 205v54" stroke="#111722" stroke-width="3"/>
+      <circle cx="595" cy="342" r="58" fill="#111722" stroke="#c7b99f" stroke-width="5"/><circle cx="595" cy="342" r="18" fill="#c7b99f"/>
+      <circle cx="110" cy="340" r="15" fill="#ff6b5d"/><circle cx="160" cy="340" r="15" fill="#d9ff73"/>
+    </g>
+    <rect x="970" y="340" width="520" height="410" rx="28" fill="#fffaf2" filter="url(#soft)"/>
+    <text x="1020" y="410" class="tiny ink">CURRENT TRANSMISSION</text>
+    <text x="1020" y="486" class="h2 ink">Niche Games</text>
+    <text x="1020" y="545" class="p muted">A tuned-in project page: artifact, context, and one note from the maker.</text>
+    <rect x="1020" y="640" width="190" height="48" rx="24" fill="#111722"/><text x="1050" y="671" fill="#fffaf2" class="tiny">TUNE IN</text>
+  </g>
+</svg>

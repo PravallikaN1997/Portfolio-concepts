@@ -1,0 +1,5 @@
+*.zip
+.DS_Store
+assets/.DS_Store
+pravallika-space-review-*/
+pravallika-space-about-release-*/

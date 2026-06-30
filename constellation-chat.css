@@ -1,0 +1,90 @@
+/* Authoritative companion chat component. Keep its physical size stable on large displays. */
+.companion-notice{
+  width:350px!important;
+  max-width:calc(100vw - 24px)!important;
+  height:170px!important;
+}
+.speech-card{
+  box-sizing:border-box!important;
+  width:auto!important;
+  min-width:0!important;
+  max-width:none!important;
+  right:58px!important;
+  bottom:22px!important;
+  padding:14px 15px!important;
+  border-radius:17px!important;
+}
+.speech-card small{
+  display:block;
+  font-size:9px!important;
+  line-height:1.35!important;
+}
+.speech-card p{
+  max-width:245px!important;
+  margin:6px 0 0!important;
+  font-size:13px!important;
+  line-height:1.45!important;
+}
+.speech-card:has(.reply-options:not(:empty)){
+  width:300px!important;
+}
+.reply-options{
+  display:flex!important;
+  flex-wrap:nowrap!important;
+  gap:7px!important;
+  margin-top:11px!important;
+  padding-top:0!important;
+  border-top:0!important;
+  opacity:1!important;
+}
+.speech-card>#noticeAction:empty,
+.speech-card.ambient>#noticeAction,
+.speech-card.response>#noticeAction:empty{
+  display:none!important;
+}
+.speech-card button,
+.speech-card .reply-options button{
+  min-width:0!important;
+  min-height:44px!important;
+  margin:10px 0 0!important;
+  padding:8px 12px!important;
+  border-radius:999px!important;
+  font-family:Manrope,sans-serif!important;
+  font-size:11px!important;
+  font-style:normal!important;
+  font-weight:500!important;
+  line-height:1.2!important;
+}
+.speech-card .reply-options button{
+  flex:1 1 0!important;
+  margin:0!important;
+  white-space:normal!important;
+}
+.speech-card:after{
+  right:-7px!important;
+  bottom:28px!important;
+}
+.companion{
+  right:0!important;
+  bottom:20px!important;
+}
+@media(max-width:700px){
+  .companion-notice{
+    right:8px!important;
+    width:min(330px,calc(100vw - 16px))!important;
+  }
+  .speech-card{
+    right:54px!important;
+    max-width:calc(100vw - 78px)!important;
+  }
+  .speech-card p{
+    max-width:220px!important;
+  }
+}
+@media(prefers-reduced-motion:reduce){
+  .companion-notice,
+  .companion{
+    transition:none!important;
+    animation:none!important;
+  }
+}
