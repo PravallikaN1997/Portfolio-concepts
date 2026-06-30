@@ -181,7 +181,7 @@ if (!hasCurrentPaceVersion) {
 relationship.visits += 1;
 localStorage.setItem(relationshipKey, JSON.stringify(relationship));
 
-const soundPreferenceKey = "pravallika-space-sound-v2";
+const soundPreferenceKey = "pravallika-space-sound-v3";
 const storedSoundPreference = localStorage.getItem(soundPreferenceKey);
 let soundEnabled = storedSoundPreference ? storedSoundPreference === "on" : false;
 if (!storedSoundPreference) localStorage.setItem(soundPreferenceKey, "off");
