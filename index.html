@@ -247,15 +247,9 @@ class Component extends DCLogic {
   constructor(props){
     super(props);
     this._starCount = Math.max(3, Math.min(12, this.props.starCount ?? 6));
-    let savedSound=null;
     this._soundKey='pravallika-space-sound-v3';
-    try{ savedSound=localStorage.getItem(this._soundKey); }catch(e){}
-    this._soundOn = savedSound ? savedSound==='on' : false;
-    if(!savedSound){
-      try{
-        localStorage.setItem(this._soundKey, this._soundOn?'on':'off');
-      }catch(e){}
-    }
+    this._soundOn = false;
+    try{ localStorage.setItem(this._soundKey, 'off'); }catch(e){}
     this._persist = this.props.persistLight ?? true;
     this._key='pravallika_space_light_v1';
     this._globalKey='pravallika_space_global_signal_v1';
@@ -415,7 +409,13 @@ class Component extends DCLogic {
       if(!this._audio) this._initAudio();
       else { if(this._audio.ac.state==='suspended') this._audio.ac.resume(); this._setAmbient(0.02); }
       this._sparkle('#6cb6ff');
-    }else this._setAmbient(0.0001);
+    }else{
+      this._setAmbient(0.0001);
+      if(this._audio){
+        try{ this._audio.ac.close(); }catch(err){}
+        this._audio=null;
+      }
+    }
     this.setState({soundOn:this._soundOn});
   }
   onSphereKey(e){

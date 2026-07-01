@@ -182,9 +182,8 @@ relationship.visits += 1;
 localStorage.setItem(relationshipKey, JSON.stringify(relationship));
 
 const soundPreferenceKey = "pravallika-space-sound-v3";
-const storedSoundPreference = localStorage.getItem(soundPreferenceKey);
-let soundEnabled = storedSoundPreference ? storedSoundPreference === "on" : false;
-if (!storedSoundPreference) localStorage.setItem(soundPreferenceKey, "off");
+let soundEnabled = false;
+localStorage.setItem(soundPreferenceKey, "off");
 let audioContext;
 let audioUnlocked = false;
 const renderSoundToggle = () => {
@@ -243,6 +242,10 @@ soundToggle.addEventListener("click", () => {
   localStorage.setItem(soundPreferenceKey, soundEnabled ? "on" : "off");
   renderSoundToggle();
   audioUnlocked = false;
+  if (!soundEnabled && audioContext) {
+    try { audioContext.close(); } catch {}
+    audioContext = null;
+  }
   playTone("click");
 });
 document.addEventListener("click", (event) => {
