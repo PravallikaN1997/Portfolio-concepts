@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Playground — Pravallika</title>
-  <meta name="description" content="A capsule machine of Pravallika's interface experiments, small observations, and unfinished ideas.">
+  <meta name="description" content="Small experiments by Pravallika: Meetbot and ASCII Vibe Cam.">
   <script type="text/javascript">
       (function(c,l,a,r,i,t,y){
           c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
@@ -19,358 +19,71 @@
   <link rel="stylesheet" href="site-shell.css">
   <script src="site-companion.js" defer></script>
 </head>
-<body class="playground-case">
+<body class="playground-page">
   <a href="#main-content" class="skip-link">Skip to content</a>
-  <header class="case-nav">
+
+  <header class="playground-nav">
     <a href="constellation.html?skipIntro=1">← desktop</a>
-    <span>PLAYGROUND / TINY EXPERIMENTS</span>
-    <button type="button" id="soundToggle" aria-pressed="true">sound on</button>
+    <span>PLAYGROUND / SMALL EXPERIMENTS</span>
+    <a href="about.html">about</a>
   </header>
 
-  <main class="capsule-stage" id="main-content">
-    <section class="machine-copy" aria-labelledby="page-title">
-      <p>~/playground</p>
-      <h1 id="page-title">pull a weekend obsession</h1>
-      <span>small websites, apps, videos, and prototypes dispensed one at a time</span>
+  <main id="main-content" class="playground-main">
+    <section class="playground-hero" aria-labelledby="page-title">
+      <p class="eyebrow">~/playground</p>
+      <h1 id="page-title">Small experiments, kept on purpose.</h1>
+      <p class="hero-copy">Tiny tools and visual tests I made because a question would not leave me alone.</p>
     </section>
 
-    <section class="capsule-machine" aria-label="Capsule machine of small projects">
-      <div class="machine-sign">WEEKEND OBSESSIONS</div>
-
-      <div class="glass-dome" aria-hidden="true">
-        <i class="capsule c1" data-project="ascii" data-face="@"></i><i class="capsule c2" data-project="ghost" data-face="⌁"></i>
-        <i class="capsule c3" data-project="meet" data-face="◷"></i><i class="capsule c4" data-project="ascii" data-face="@"></i>
-        <i class="capsule c5" data-project="secret" data-face="?"></i><i class="capsule c6" data-project="meet" data-face="◷"></i>
-        <i class="capsule c7" data-project="ghost" data-face="⌁"></i><i class="capsule c8" data-project="ascii" data-face="@"></i>
-        <i class="capsule c9" data-project="meet" data-face="◷"></i><i class="capsule c10" data-project="ghost" data-face="⌁"></i>
-        <i class="capsule c11" data-project="secret" data-face="?"></i><i class="capsule c12" data-project="ascii" data-face="@"></i>
-        <b class="spark"></b>
-        <i class="shine"></i>
+    <section class="experiment-shelf" aria-labelledby="experiments-title">
+      <div class="section-heading">
+        <p class="eyebrow">currently on the shelf</p>
+        <h2 id="experiments-title">Two things I can actually show you right now.</h2>
       </div>
 
-      <div class="machine-body">
-        <div class="memory-lights" aria-hidden="true">
-          <i></i><i></i><i></i>
+      <article class="experiment-card meetbot-card">
+        <div class="experiment-image meetbot-image">
+          <img src="assets/playground/meetbot.png" alt="Meetbot onboarding screen with a small robot and calendar sign-in options">
         </div>
-        <div class="display" aria-live="polite">
-          <small id="machineStatus">insert curiosity</small>
-          <strong id="currentLabel">pick or crank</strong>
+        <div class="experiment-copy">
+          <p class="project-chip">launched helper</p>
+          <h3>Meetbot</h3>
+          <p>An AI meeting assistant that notices calendar timing and helps you prep before the call starts.</p>
+          <ul>
+            <li>Calendar-aware</li>
+            <li>desktop helper</li>
+            <li>soft nudges</li>
+          </ul>
+          <span class="project-link is-muted">local prototype captured</span>
         </div>
+      </article>
 
-        <div class="coin-copy">
-          <p>insert imagination</p>
-          <i aria-hidden="true"></i>
+      <article class="experiment-card ascii-card">
+        <div class="experiment-image ascii-image">
+          <img src="assets/playground/ascii-cam.png" alt="ASCII Vibe Cam output showing a portrait rendered as yellow terminal characters on black">
         </div>
-
-        <button class="crank" type="button" id="crankButton" aria-label="Crank the capsule machine">
-          <span></span>
-        </button>
-
-        <button class="tray" type="button" id="openButton" disabled>
-          <i id="trayCapsule"></i>
-          <span id="trayText">empty tray</span>
-        </button>
-      </div>
+        <div class="experiment-copy">
+          <p class="project-chip">live experiment</p>
+          <h3>ASCII Vibe Cam</h3>
+          <p>A browser camera experiment that turns captured images into low-resolution ASCII / terminal-style portraits.</p>
+          <ul>
+            <li>Camera</li>
+            <li>ASCII texture</li>
+            <li>lo-fi capture</li>
+          </ul>
+          <a class="project-link" href="https://ascii-vibe-cam.vercel.app/" target="_blank" rel="noreferrer">try it ↗</a>
+        </div>
+      </article>
     </section>
 
-    <p class="machine-note" id="uncoveredText">0 curiosities uncovered</p>
+    <section class="playground-note" aria-label="A note about playground projects">
+      <p>Not everything here needs to become a case study. Some things are just proof that I followed the question far enough to make it real.</p>
+    </section>
   </main>
 
-  <dialog class="capsule-dialog" id="capsuleDialog" aria-labelledby="projectTitle" aria-describedby="projectBlurb">
-    <button class="close-dialog" type="button" id="closeDialog" aria-label="Close">×</button>
-    <div class="capsule-shell" aria-hidden="true"><i></i><i></i></div>
-    <article class="obsession-slip">
-      <header>
-        <p class="rarity" id="projectRarity">common capsule</p>
-        <span id="projectNumber">obsession no. 01</span>
-      </header>
-      <div class="artifact" id="projectArtifact" aria-hidden="true"></div>
-      <h2 id="projectTitle">ASCII Converter</h2>
-      <p class="blurb" id="projectBlurb">A tiny project that turns images into character texture.</p>
-      <p class="spark-question"><span>Started because</span><b id="projectWhy">I wanted to see how little information a face needs before it still feels recognizable.</b></p>
-      <dl>
-        <div><dt>Built in</dt><dd id="projectTime">Two late evenings</dd></div>
-        <div><dt>Kept because</dt><dd id="projectDetail">The portrait still reads after it falls apart.</dd></div>
-      </dl>
-      <a id="projectLink" href="#" target="_blank" rel="noreferrer">Open experiment →</a>
-    </article>
-    <div class="memory-whispers" aria-hidden="true">
-      <span></span><span></span><span></span>
-    </div>
-  </dialog>
-
-  <script>
-    const projects = {
-      ascii: {
-        title: "ASCII Converter",
-        rarity: "common capsule",
-        blurb: "A tiny image-to-text toy with old-terminal texture.",
-        why: "I wanted to know how little information a face needs before it still feels recognizable.",
-        format: "Website",
-        time: "Two late evenings",
-        detail: "The portrait still reads after it falls apart.",
-        artifact: "ascii",
-        artifactMarkup: "<pre>@@@@@@##\n@@@##++=\n++==--..</pre><em>portrait fragment / pass 04</em>",
-        number: "obsession no. 01",
-        whispers: ["portrait", "terminal", "texture"],
-        face: "@",
-        link: "#",
-        tone: "#a6d9a8"
-      },
-      ghost: {
-        title: "Ghost Matter",
-        rarity: "rare capsule",
-        blurb: "A small speculative interface for stories ordinary objects might tell.",
-        why: "I could not stop wondering what ordinary objects would say if they had memories.",
-        format: "Video",
-        time: "Too many quiet nights",
-        detail: "The object feels restless when its story is incomplete.",
-        artifact: "ghost",
-        artifactMarkup: "<span>SOUL_07</span><strong>The Restless Carrier</strong><em>Memory #07 · last filled at 1:43 AM</em>",
-        number: "obsession no. 02",
-        whispers: ["bottle", "ticket", "key"],
-        face: "⌁",
-        link: "#",
-        tone: "#b9c9ff"
-      },
-      meet: {
-        title: "Meet Bot",
-        rarity: "favorite capsule",
-        blurb: "A meeting helper for tiny timing failures and social friction.",
-        why: "I kept joining meetings exactly one minute late and wanted the interface to notice gently.",
-        format: "App",
-        time: "One annoyed afternoon",
-        detail: "The reminder sounds helpful, not disappointed.",
-        artifact: "meet",
-        artifactMarkup: "<span>11:55</span><strong>Meeting in 5 minutes.</strong><em>You said “one more minute” four minutes ago.</em>",
-        number: "obsession no. 03",
-        whispers: ["11:59", "joining…", "one minute"],
-        face: "◷",
-        link: "#",
-        tone: "#ffd36f"
-      },
-      secret: {
-        title: "Secret Capsule",
-        rarity: "legendary capsule",
-        blurb: "A hidden experiment for people who keep pulling the handle.",
-        why: "Some ideas are better when they feel found instead of announced.",
-        format: "Hidden",
-        time: "Unlocked after a few tries",
-        detail: "The machine pretends it was not hiding anything.",
-        artifact: "secret",
-        artifactMarkup: "<span>FILE_???</span><strong>It was here a second ago.</strong><em>Never shipped. Probably should have.</em>",
-        number: "unfiled obsession",
-        whispers: ["do not label", "found late", "keep pulling"],
-        face: "?",
-        link: "#",
-        tone: "#f2a4b8"
-      }
-    };
-
-    const statusText = document.getElementById("machineStatus");
-    const currentLabel = document.getElementById("currentLabel");
-    const trayText = document.getElementById("trayText");
-    const trayCapsule = document.getElementById("trayCapsule");
-    const openButton = document.getElementById("openButton");
-    const crankButton = document.getElementById("crankButton");
-    const dialog = document.getElementById("capsuleDialog");
-    const soundToggle = document.getElementById("soundToggle");
-    const uncoveredText = document.getElementById("uncoveredText");
-    const glassDome = document.querySelector(".glass-dome");
-    let currentProject = null;
-    let soundOn = true;
-    let audioContext;
-    const discoveryHistory = new Set(JSON.parse(localStorage.getItem("playground-uncovered") || "[]"));
-    const uncovered = new Set();
-    let chosenCapsule = null;
-    let completionPending = false;
-    let completionCelebrated = false;
-
-    function shuffledProjectBag() {
-      const all = Object.keys(projects);
-      let bag;
-      try {
-        bag = JSON.parse(localStorage.getItem("playground-project-bag") || "[]");
-      } catch {
-        bag = [];
-      }
-      bag = [...new Set(bag)].filter(key => all.includes(key));
-      if (!bag.length) {
-        bag = [...all];
-        for (let index = bag.length - 1; index > 0; index -= 1) {
-          const swapIndex = Math.floor(Math.random() * (index + 1));
-          [bag[index], bag[swapIndex]] = [bag[swapIndex], bag[index]];
-        }
-        const last = localStorage.getItem("playground-last-project");
-        if (bag.length > 1 && bag[bag.length - 1] === last) {
-          [bag[0], bag[bag.length - 1]] = [bag[bag.length - 1], bag[0]];
-        }
-      }
-      const key = bag.pop();
-      localStorage.setItem("playground-project-bag", JSON.stringify(bag));
-      localStorage.setItem("playground-last-project", key);
-      return key;
-    }
-
-    function saveUncovered() {
-      localStorage.setItem("playground-uncovered", JSON.stringify([...discoveryHistory]));
-      uncoveredText.textContent = uncovered.size ? `found ${uncovered.size}/4 · ${"●".repeat(uncovered.size)}${"○".repeat(4 - uncovered.size)}` : "nothing opened yet";
-      uncoveredText.classList.toggle("has-finds", uncovered.size > 0);
-      document.querySelectorAll(".capsule[data-project]").forEach(capsule => {
-        capsule.classList.toggle("sleeping", discoveryHistory.has(capsule.dataset.project));
-      });
-    }
-
-    function tone(freq, duration, type = "square", volume = .04) {
-      if (!soundOn) return;
-      audioContext ||= new (window.AudioContext || window.webkitAudioContext)();
-      const now = audioContext.currentTime;
-      const osc = audioContext.createOscillator();
-      const gain = audioContext.createGain();
-      osc.type = type;
-      osc.frequency.setValueAtTime(freq, now);
-      gain.gain.setValueAtTime(volume, now);
-      gain.gain.exponentialRampToValueAtTime(.001, now + duration);
-      osc.connect(gain);
-      gain.connect(audioContext.destination);
-      osc.start(now);
-      osc.stop(now + duration);
-    }
-
-    function rattle() {
-      [90, 132, 76, 180, 118].forEach((freq, index) => setTimeout(() => tone(freq, .055, "sawtooth", .025), index * 70));
-    }
-
-    function capsulePop() {
-      tone(105, .08, "square", .028);
-      setTimeout(() => tone(680, .16, "sine", .032), 90);
-      setTimeout(() => tone(920, .2, "triangle", .018), 145);
-    }
-
-    function completionChime() {
-      [392, 523, 659, 784].forEach((freq, index) => {
-        setTimeout(() => tone(freq, .32, "triangle", .026), index * 115);
-      });
-    }
-
-    function celebrateCompletion() {
-      if (completionCelebrated) return;
-      completionCelebrated = true;
-      completionPending = false;
-      const machine = document.querySelector(".capsule-machine");
-      machine.classList.add("celebrating");
-      statusText.textContent = "roll complete";
-      currentLabel.textContent = "all obsessions found";
-      completionChime();
-      setTimeout(() => machine.classList.remove("celebrating"), 2600);
-    }
-
-    function projectCue(key) {
-      if (key === "ascii") {
-        [160, 220, 145, 260].forEach((freq, index) => setTimeout(() => tone(freq, .045, "square", .016), index * 32));
-      } else if (key === "meet") {
-        tone(660, .12, "sine", .025);
-        setTimeout(() => tone(880, .18, "sine", .02), 130);
-      } else if (key === "ghost") {
-        tone(118, .42, "sine", .018);
-        setTimeout(() => tone(176, .34, "triangle", .012), 110);
-      } else {
-        [440, 710, 1030].forEach((freq, index) => setTimeout(() => tone(freq, .16, "triangle", .015), index * 90));
-      }
-    }
-
-    function chooseDomeCapsule(key) {
-      if (chosenCapsule) chosenCapsule.classList.remove("chosen", "dropping");
-      const candidates = [...document.querySelectorAll(`.capsule[data-project="${key}"]`)];
-      chosenCapsule = candidates.find(capsule => !capsule.classList.contains("sleeping")) || candidates[0];
-      chosenCapsule?.classList.remove("sleeping");
-      chosenCapsule?.classList.add("chosen", "dropping");
-    }
-
-    function dispense(key) {
-      const project = projects[key];
-      currentProject = key;
-      chooseDomeCapsule(key);
-      document.documentElement.style.setProperty("--capsule", project.tone);
-      statusText.textContent = project.rarity;
-      currentLabel.textContent = project.title;
-      trayText.textContent = `${project.title} ↑ open`;
-      trayCapsule.style.background = project.tone;
-      trayCapsule.dataset.face = project.face;
-      trayCapsule.classList.remove("reacting");
-      void trayCapsule.offsetWidth;
-      trayCapsule.classList.add("reacting");
-      setTimeout(() => trayCapsule.classList.remove("reacting"), 1300);
-      openButton.disabled = false;
-      document.querySelector(".capsule-machine").classList.add("dispensed");
-      setTimeout(() => document.querySelector(".capsule-machine").classList.remove("dispensed"), 560);
-      tone(280, .12, "triangle", .035);
-      setTimeout(() => projectCue(key), 170);
-    }
-
-    function openProject() {
-      if (!currentProject) return;
-      const project = projects[currentProject];
-      uncovered.add(currentProject);
-      discoveryHistory.add(currentProject);
-      saveUncovered();
-      completionPending = uncovered.size === 4 && !completionCelebrated;
-      projectRarity.textContent = project.rarity;
-      projectTitle.textContent = project.title;
-      projectBlurb.textContent = project.blurb;
-      projectWhy.textContent = project.why;
-      projectTime.textContent = project.time;
-      projectDetail.textContent = project.detail;
-      projectNumber.textContent = project.number;
-      projectArtifact.className = `artifact ${project.artifact}`;
-      projectArtifact.innerHTML = project.artifactMarkup;
-      projectLink.href = project.link;
-      projectLink.textContent = "Open experiment →";
-      document.querySelectorAll(".memory-whispers span").forEach((word, index) => {
-        word.textContent = project.whispers[index];
-      });
-      document.documentElement.style.setProperty("--capsule", project.tone);
-      capsulePop();
-      dialog.showModal();
-    }
-
-    crankButton.addEventListener("click", () => {
-      const key = shuffledProjectBag();
-      document.querySelector(".capsule-machine").classList.add("turning");
-      document.querySelectorAll(".capsule").forEach(capsule => capsule.classList.remove("dropping", "chosen"));
-      statusText.textContent = "accessing memory...";
-      currentLabel.textContent = "please wait";
-      rattle();
-      setTimeout(() => {
-        currentLabel.textContent = "unlocking";
-        tone(410, .08, "square", .026);
-      }, 520);
-      setTimeout(() => {
-        document.querySelector(".capsule-machine").classList.remove("turning");
-        dispense(key);
-      }, 980);
-    });
-
-    openButton.addEventListener("click", openProject);
-    closeDialog.addEventListener("click", () => dialog.close());
-    dialog.addEventListener("close", () => {
-      if (completionPending) celebrateCompletion();
-    });
-    soundToggle.addEventListener("click", () => {
-      soundOn = !soundOn;
-      soundToggle.textContent = soundOn ? "sound on" : "sound off";
-      soundToggle.setAttribute("aria-pressed", String(soundOn));
-    });
-    glassDome.addEventListener("pointermove", event => {
-      const bounds = glassDome.getBoundingClientRect();
-      glassDome.style.setProperty("--glare-x", `${event.clientX - bounds.left}px`);
-      glassDome.style.setProperty("--glare-y", `${event.clientY - bounds.top}px`);
-    });
-    glassDome.addEventListener("pointerleave", () => {
-      glassDome.style.removeProperty("--glare-x");
-      glassDome.style.removeProperty("--glare-y");
-    });
-    saveUncovered();
-  </script>
+  <footer class="about-footer">
+    <div class="footer-signal"><p>The world is full of tiny clues.<br><em>Thanks for spending a little time in mine.</em></p></div>
+    <nav aria-label="Footer navigation"><a href="ascent.html">Ascent</a><a href="clara.html">Clara</a><a href="parks.html">Parks</a><a href="about.html">About</a><a href="mailto:p.k.init.io@gmail.com">p.k.init.io@gmail.com ↗</a></nav>
+  </footer>
 </body>
 </html>
