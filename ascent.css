@@ -195,3 +195,57 @@ figure:has(.project-image:focus-visible){outline:3px solid var(--orange);outline
     grid-template-columns:1fr;
   }
 }
+
+.case-context-line{
+  width:max-content;
+  max-width:100%;
+  margin:18px 0 0;
+  padding:8px 11px;
+  border:1px solid #cdb9a0;
+  border-radius:999px;
+  background:#fff8;
+  color:#6e6358;
+  font:500 10px DM Mono,monospace;
+  letter-spacing:.07em;
+  text-transform:uppercase;
+}
+
+.tension-card{
+  max-width:780px;
+  margin:30px 0 0;
+  padding:22px 24px;
+  border:1px solid #d7c9b9;
+  border-left:4px solid var(--orange);
+  border-radius:16px;
+  background:#fffaf2;
+  box-shadow:0 18px 35px #4e342214;
+}
+
+.tension-card small{
+  display:block;
+  color:var(--orange);
+  font:500 10px DM Mono,monospace;
+  letter-spacing:.11em;
+}
+
+.tension-card b{
+  display:block;
+  margin:12px 0 7px;
+  font-size:16px;
+  line-height:1.45;
+}
+
+.tension-card p{
+  margin:0;
+  color:#4c5864;
+  font-size:13px;
+  line-height:1.65;
+}
+
+@media(max-width:600px){
+  .case-context-line{
+    width:auto;
+    font-size:9px;
+    line-height:1.45;
+  }
+}
