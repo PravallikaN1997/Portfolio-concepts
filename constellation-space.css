@@ -207,6 +207,15 @@
   color: rgba(246,242,233,.94) !important;
   font-size: 11px !important;
 }
+.desktop:not(.night) .vinyl-panel .player-control {
+  border-radius: 999px !important;
+  background: rgba(21, 32, 47, .08) !important;
+  color: #15202f !important;
+  box-shadow: inset 0 -1px rgba(21, 32, 47, .12) !important;
+}
+.desktop:not(.night) .vinyl-panel .player-control:hover {
+  background: rgba(21, 32, 47, .14) !important;
+}
 .vinyl-panel .track-link {
   min-width: 36px !important;
   width: 36px !important;
