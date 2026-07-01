@@ -1204,6 +1204,52 @@
     display:none;
   }
 
+  .decision-debate article,
+  .boundary-protocol article{
+    gap:14px;
+    padding:18px;
+  }
+
+  .decision-debate b::before,
+  .decision-debate p::before,
+  .boundary-protocol b::before,
+  .boundary-protocol p::before,
+  .boundary-protocol span::before{
+    display:block;
+    margin-bottom:5px;
+    font:500 var(--mono-copy) DM Mono;
+    letter-spacing:.11em;
+    color:#b96532;
+  }
+
+  .decision-debate b::before{
+    content:"DIRECTION";
+  }
+
+  .decision-debate p:first-of-type::before{
+    content:"WHY IT WAS TEMPTING";
+  }
+
+  .decision-debate p:last-of-type::before{
+    content:"WHY IT CHANGED";
+  }
+
+  .boundary-protocol b::before{
+    content:"FAILURE STATE";
+  }
+
+  .boundary-protocol p:first-of-type::before{
+    content:"GUARDRAIL";
+  }
+
+  .boundary-protocol p:last-of-type::before{
+    content:"USER-FACING RECOVERY";
+  }
+
+  .boundary-protocol span::before{
+    content:"OWNER";
+  }
+
   .breakthrough-artifact img{
     height:320px;
   }
